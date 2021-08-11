@@ -1,0 +1,865 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+$pink_text: #F16D7F;
+
+.pink_text {
+    color: $pink_text;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+
+
+.header {
+    background-color: #222222;
+    height: 75px;
+    display: flex;
+    align-items: center;
+}
+
+.header_box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    padding: 12px;
+}
+
+.button_search_field {
+    padding: 18px;
+    background: #222;
+    color: #FFF;
+    border: transparent;
+    cursor: pointer;
+    margin-left: 11px;
+}
+
+#search {
+    width: 0px;
+    border-radius: 20px;
+    font-family: 'Lato', sans-serif;
+    border: transparent;
+    height: 50px;
+    line-height: 50px;
+    color: #222224;
+    font-weight: 400;
+    text-align: center;
+    font-size: 16px;
+    background: #F1E4E6;
+    transition: width .55s ease-in-out;
+}
+
+.search_field:hover .button_search_field {
+    color:#F2A2AD;
+}
+
+
+.search_field:hover #search,  #search:focus, #search:active #search {
+    width: 300px;
+}
+
+
+
+//           ПРАВАЯ СТОРОНА ХЕДЕРА
+
+.header_right {
+    display: flex;
+    align-items: baseline;
+}
+
+.menu {
+    position: relative;
+}
+
+.header_right_link {
+    padding: 15px;
+}
+
+
+.menu_box {
+    display: none;
+    flex-direction: column;
+    background: #FFFFFF;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    border-radius: 5px;
+    width: 232px;
+    height: 774px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 38px;
+}
+
+.menu:hover .menu_box {
+    display: flex;
+}
+
+.menu_box::before {
+    content: '';
+    display: block;
+    height: 12px;
+    width: 12px;
+    position: absolute;
+    background-color: #FFFFFF;
+    border-left: 1px solid rgba(0, 0, 0, 0.21);
+    border-top: 1px solid rgba(0, 0, 0, 0.21);
+    top: -7px;
+    left: 25px;
+    transform: rotate(45deg);
+}
+
+.menu_box_heading {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin: 37px 0 9.5px 34px;
+    text-transform: uppercase;
+}
+
+.item_heading {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $pink_text;
+    margin: 14.5px 0 6.5px 34px;
+    text-transform: uppercase;
+}
+
+.item_link {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    padding-left: 54px;
+    padding-top: 5.5px;
+    padding-bottom: 5.5px;
+    display: block;
+    text-decoration: none;
+}
+
+.item_link:hover {
+    color: #FFFFFF;
+    background: $pink_text;
+    transition: 0.2s ease;
+}
+
+
+
+//БЛОК МУЖИК С ЛОГОТИПОМ СПРАВА
+.brand {
+    background: #F1E4E6;
+    height: 764px;
+}
+
+.brand_box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.brand_men {
+    height: inherit;
+    object-fit: contain;
+}
+
+.brand_box_head {
+    display: flex;
+    height: 92px;
+    margin: 290px 80px 0 0;
+}
+
+.vertical_line {
+    height: 100%;
+    width: 12px;
+    background: $pink_text;
+    margin-right: 16px;
+}
+
+.brand_box_text {
+    width: 377px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 45px;
+}
+
+.brand_box_h1 {
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 48px;
+}
+
+.brand_box_h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    font-variant: small-caps;
+}
+
+
+
+
+//БЛОК РАЗДЕЛЫ "ДЛЯ ЖЕНЩИН" "ДЛЯ МУЖЧИН" "ДЛЯ ДЕТЕЙ"...
+
+.chapters {
+    margin-top: 65px;
+}
+
+.chapters_box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.chapters_card {
+    position: relative;
+}
+
+.chapters_link {
+    display: block;
+    text-decoration: none;
+    width: 100%;
+}
+
+.chapters_img {
+    filter: brightness(50%);
+}
+
+.chapters_text_box {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 105px;
+}
+
+.chapters_text {
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #FFFFFF;
+}         
+
+.chapters_heading {
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.chapters_accesories {
+    margin-top: 30px;
+}
+
+.accesories_text_box {
+    top: 65px;
+}
+
+.chapters_card:hover .chapters_img {
+    filter: none;
+    transition: 1s ease;
+}
+
+
+
+//БЛОК С КАРТОЧКАМИ ТОВАРОВ
+
+.catalog {
+    margin-top: 96px;
+}
+.catalog_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+.catalog_head {  
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    color: #222222;
+    text-transform: capitalize;
+}
+
+.catalog_text {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+    margin-top: 6px;
+}
+
+.card_box {
+    margin-top: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    width: 360px;
+    background: #F8F8F8;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.card_link {
+    display: block;
+    text-decoration: none;
+}
+
+
+.card_img {
+    width: 100%;
+}
+
+.card:hover {
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+}
+
+.card:hover .card_img {
+    filter: brightness(50%);
+}
+
+.card:hover .add_box {
+    display: flex;
+}
+
+.card_info {
+    padding: 24px 29px 20px 16px;
+}
+
+.card_head {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.card_text {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+    margin: 13px 0 18px 0;
+}
+
+.card_price {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.add_box {
+    position: absolute;
+    top: 188.5px;
+    display: none;
+    justify-content: center;
+    width: 100%;
+}
+
+.add {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #FFFFFF;
+}
+
+.add_text {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    margin-left: 11px;
+}
+
+.add:hover {
+    box-shadow: 0 0px 10px #FFFFFF
+}
+
+.catalog_button {
+    display: block;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    border: 1px solid $pink_text;
+    padding: 14px 38.5px;
+    margin-top: 18.5px; 
+}
+
+.catalog_button:hover {
+    border: 1px solid transparent;
+    color: white;
+    background-color: $pink_text;
+    transition: 1s ease;
+}
+
+
+
+
+//БЛОК ПРЕИМУЩЕСТВА
+.advantages {
+    background: #222224;
+    margin-top: 95.5px;
+}
+
+.advantages_box {
+    display: flex;
+    justify-content: space-between;
+    padding: 103px 0 104px;
+}
+
+.advantages_card {
+    text-align: center;
+    width: 360px;
+}
+
+.advantages_head {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #FBFBFB;
+    margin: 25px 0 16px 0;
+}
+
+.advantages_text {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    color: #FBFBFB;
+}
+
+.advantages_discount {
+    margin-top: 20px;
+}
+
+
+
+//БЛОК ФУТЕР
+
+.background_footer {
+    background-image: url(image/background_footer.png);
+    background-size: cover;
+}
+
+.feedback {
+    background: rgba(244, 244, 244, 0.7);
+}
+
+.feedback_box {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 97px;
+    padding-bottom: 156px;
+}
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 360px;
+}
+
+.comment_text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #222224;
+    margin-top: 30px;
+}
+
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 557px;
+    margin-top: 63px;
+}
+
+.subscribe_head {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 167.2%;
+    text-transform: uppercase;
+    color: #222224;
+    text-align: center;
+}
+
+.subscribe_text_p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30,1px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.form_email {
+    display: flex;
+    margin-top: 22px;
+}
+
+.input_email {
+    font-family: 'Lato', sans-serif;
+    border: 1px solid transparent;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 256px;
+    height: 49px;
+    background: #E1E1E1;
+    line-height: 49px;
+    padding-left: 22px;
+    color: #222224;
+    opacity: 0.67;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.button_email {
+    background: #F16D7F;
+    width: 100px;
+    height: 49px;
+    border-radius: 0 20px 20px 0;
+    border: 1px solid $pink_text;
+    font-weight: 400;
+    color: #fff;
+    font-size: 14px;
+}
+
+.button_email:hover {
+    border: 1px solid transparent;
+    color: $pink_text;
+    background-color:  #E1E1E1;
+    transition: 1s ease;
+    cursor: pointer
+}
+
+
+.footer_copyright {
+    background: #222224;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 79px;
+    text-align: center;
+}
+
+.copyright_text {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FBFBFB;
+}
+
+.footer_links {
+    display: flex;
+    justify-content: space-between;
+    width: 148px;
+}
+
+.links {
+    width: 32px;
+    height: 32px;
+    background: #FFFFFF;
+    text-decoration: none;
+    color: #000000;
+    text-align: center;
+    line-height: 32px;
+    border: 1px solid transparent;
+}
+
+.links:hover {
+    background: $pink_text;
+    color: #FFFFFF;
+    transition: 1s ease;
+}
+
+
+
+
+
+
+
+
+
+
+//         СТИЛИ ДЛЯ СТРАНИЦЫ ПРОДУКТ
+
+
+.breadcrumb_background {
+    background: #F8F3F4;
+}
+
+.breadcrumb_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 148px;
+}
+
+.breadcrumb_heading {
+    font: 400 24px/29px Lato;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.breadcrumb {
+    list-style-type: none;
+    text-transform: uppercase;
+    display: flex;
+
+}
+
+.breadcrumb_link {
+    display: block;
+    text-decoration: none;
+    font: 300 14px/17px Lato;
+    color: #636363;
+}
+
+.breadcrumb_link:hover {
+    color: #7594d8;
+}
+
+.active {
+    font: 700 14px/17px Lato;
+}
+
+.breadcrumb_float {
+    padding-left: 5px;
+}
+
+.breadcrumb_float::before {
+    float: left;
+    padding-right: 5px;
+    color: #6c757d;
+    content: "/";
+    font-weight: 300;
+}
+
+
+
+//КАРУСЕЛЬ
+.background_carousel {
+    background: #F7F7F7;
+    height: 777px;
+}
+
+// БЛОК ИНФОРМАЦИИ О ПРОДУКТЕ . СТРАНИЦА ПРОДУКТ
+.background_page {
+    background: #E5E5E5;
+    padding-bottom: 98px;
+}
+
+.product_info {
+    border: 1px solid #EAEAEA;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 129px;
+}
+
+.product_box {
+    height: 100%;
+    width: 100%;
+    padding: 65px 0;
+    margin-top: -65px;
+    background: #FFFFFF;
+}
+
+.product_box_top {
+    text-align: center;
+}
+
+.chapter_name {
+    text-transform: uppercase;
+    font: 300 14px/17px Lato;
+}
+
+.product_small_line {
+    display: inline-block;
+    width: 63px;
+    height: 3px;
+    background-color: $pink_text;
+    border: none;
+    margin: 12px 0;
+}
+
+.product_name {
+    font: 300 18px/22px Lato;
+    color: #4D4D4D;
+}
+
+.product_description {
+    display: inline-block;
+    font: 300 14px/17px Lato;
+    width: 555px;
+    color: #5E5E5E;
+    margin: 48px 0 32px 0;
+}
+
+.product_price {
+    font: 300 24px/26px Lato;
+    padding-bottom: 65px;
+}
+
+.product_big_line {
+    border: 1px solid #EAEAEA;
+    width: 641px;
+    display: inline-block;
+}
+
+.product_box_bottom {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+//БЛОК ВЫБОРА ЦВЕТА, РАЗМЕРА...
+.choise_block {
+    display: flex;
+    align-items: center;
+    padding: 65px 0 49px 0;
+}
+
+.choise {
+    position: relative;
+}
+
+.control, .variant {
+    display: none;
+}
+
+.control_item {
+    font: 400 14px/17px Lato;
+    text-transform: uppercase;
+    color: #6F6E6E;
+    padding: 10px 11.5px;
+}
+
+.fa-angle-down {
+    padding-left: 10px;
+}
+
+.control_item:hover {
+    cursor: pointer;
+}
+
+.control:checked + .control_item {
+    color: $pink_text;
+}
+
+.control:checked + .control_item + .choise_box {
+    left: 0px;
+}
+
+.choise_box {
+    position: absolute;
+    left: -3000px;
+    top: 20px;
+    padding: 10px 15px;
+    width: 100%;
+    box-sizing: border-box;
+    background: #F7F7F7;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+.item {
+    display: block;
+    font: 400 14px/16px Lato;
+    color: #6F6E6E;
+    padding: 3px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.item:hover {
+    background: $pink_text;
+    color: #FFFFFF;
+    transition: .55s ease;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.variant:checked + .item {
+    background: $pink_text;
+    color: #FFFFFF;
+    border-radius: 20px;
+}
+
+//КОНЕЦ БЛОКА С ВЫБОРОВ ЦВЕТА И РАЗМЕРОВ...
+
+
+
+.product_add {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    border: 1px solid $pink_text;
+}
+
+.fa-shopping-cart {
+    color: $pink_text;
+    padding: 6.7px 23px;
+}
+
+.product_add_text {
+    font: 400 16px/19px Lato;
+    color: $pink_text;
+    padding-right: 56px;
+}
+
+.product_add:hover {
+    border: 1px solid transparent;
+    background-color: $pink_text;
+    transition: 1s ease;
+    box-shadow: 0 0 10px indianred;
+}
+
+.product_add:hover .fa-shopping-cart {
+    color: #FFFFFF;
+    transition: 1s ease;
+}
+
+.product_add:hover .product_add_text {
+    color: #FFFFFF;
+    transition: 1s ease;
+}
