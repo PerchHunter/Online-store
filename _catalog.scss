@@ -79,6 +79,7 @@
     display: none;
     padding: 6px 0 6px 17px;
     width: 100%;
+    transition: all .2s ease;
 }
 
 .filter:checked + .filter_heading {
@@ -92,7 +93,6 @@
 .filter_link:hover {
     color: #FFFFFF;
     background: $pink_text;
-    transition: .55s ease;
     border-radius: 20px;
 }
 
@@ -169,11 +169,32 @@
 
 
 .pagination {
-    width: 283px;
+    display: inline-block;
     height: 43px;
-    margin-top: 18.5px;
+    margin: 18.5px auto 0 auto;
     border: 1px solid #EBEBEB;
+}
+
+.pagination_link {
+    font: 300 16px/43px 'Lato';
+    color: #6F6E6E;
+    float: left;
+    padding: 0px 13.1px;
+    text-decoration: none;
     text-align: center;
-    display: flex;
-    justify-content: center;
+}
+
+.pagination .active {
+    border: 1px solid $pink_text;
+    color: $pink_text;
+    border-radius: 5px;
+}
+
+.pagination_link:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+.fa-chevron-left, .fa-chevron-right {
+    color: #000000;
 }
