@@ -30,11 +30,11 @@
                 </form>
             </div>
 
-            <nav class="header_right">
-                <div class="menu">
+            <div class="header_right">
+                <nav class="menu">
                     <a class="header_right_link" href="#"><img src="image/menu.svg" alt="menu"></a>
                     <div class="menu_box">
-                        <h3 class="menu_box_heading">MENU</h3>
+                        <h2 class="menu_box_heading">MENU</h2>
                         <div class="menu_box_item">
                             <h3 class="item_heading">MAN</h3>
                             <a class="item_link" href="#">Accessories</a>
@@ -60,24 +60,24 @@
                             <a class="item_link" href="#">Bags</a>
                         </div>
                     </div>
-                </div>
-                <a class="header_right_link" href="registration.html"><img src="image/personal_account.svg"
+                </nav>
+                <a class="header_right_link header_home" href="registration.html"><img src="image/personal_account.svg"
                         alt="account"></a>
                 <a class="header_cart" href="cart.html"><img src="image/basket.svg" alt="basket"></a>
-            </nav>
+            </div>
         </div>
     </header>
 
 
     <div class="breadcrumb_background">
-        <nav class="breadcrumb_nav container">
+        <div class="breadcrumb_nav container">
             <h2 class="breadcrumb_heading">New arrivals</h2>
-            <ol class="breadcrumb">
-                <li class="breadcrumb_item"><a class="breadcrumb_link" href="index.html">Home</a></li>
-                <li class="breadcrumb_item"><a class="breadcrumb_link breadcrumb_float" href="#"> Men</a></li>
-                <li class="breadcrumb_item active breadcrumb_float" style="color: #F16D7F;"> New arrivals</li>
-            </ol>
-        </nav>
+            <nav class="breadcrumb">
+                <a class="breadcrumb_link" href="index.html">Home</a>
+                <a class="breadcrumb_link breadcrumb_float" href="catalog.html"> Men</a>
+                <p class="active breadcrumb_float"> New arrivals</p>
+            </nav>
+        </div>
     </div>
 
     <div class="background_carousel">
@@ -114,86 +114,62 @@
             </div>
         </div>
     </div>
-    </div>
 
-    <div class="background_page">
+    <div class="background_page_product">
 
         <div class="product_info container">
-            <section class="product_box">
-                <div class="product_box_top">
-                    <h4 class="chapter_name">WOMEN COLLECTION</h4>
-                    <hr class="product_small_line">
-                    <h3 class="product_name">MOSCHINO CHEAP AND CHIC</h3>
-                    <p class="product_description">Compellingly actualize fully researched processes before
-                        proactive
-                        outsourcing. Progressively syndicate collaborative architectures before cutting-edge
-                        services.
-                        Completely visualize parallel core competencies rather than exceptional portals.</p>
-                    <h2 class="product_price">$561</h2>
-                    <hr class="product_big_line">
+            <article class="product_box_top">
+                <h2 class="chapter_name">WOMEN COLLECTION</h2>
+                <hr class="product_small_line">
+                <h3 class="product_name">MOSCHINO CHEAP AND CHIC</h3>
+                <p class="product_description">Compellingly actualize fully researched processes before
+                    proactive
+                    outsourcing. Progressively syndicate collaborative architectures before cutting-edge
+                    services.
+                    Completely visualize parallel core competencies rather than exceptional portals.</p>
+                <h2 class="product_price">$561</h2>
+                <hr class="product_big_line">
+            </article>
+
+
+            <form class="product_box_bottom" id="add_to_cart">
+                <div class="select_block">
+                    <select form="add_to_cart" required name="color" class="select_item">
+                        <option class="option_item" value="#">CHOOSE COLOR</option>
+                        <option class="option_item" value="color1">RED</option>
+                        <option class="option_item" value="color2">BLUE</option>
+                        <option class="option_item" value="color3">VIOLET</option>
+                        <option class="option_item" value="color4">GREEN</option>
+                    </select>
                 </div>
-
-
-                <div class="product_box_bottom">
-                    <div class="choise_block">
-                        <div class="choise">
-                            <input type="checkbox" id="control_color" class="control">
-                            <label class="control_item" for="control_color">CHOOSE COLOR<i class="fa fa-angle-down"
-                                    aria-hidden="true"></i>
-                            </label>
-                            <div class="choise_box">
-                                <input type="radio" id="color_variant_red" name="color" class="variant"> <label
-                                    class="item" for="color_variant_red">Red</label>
-                                <input type="radio" id="color_variant_blue" name="color" class="variant"> <label
-                                    class="item" for="color_variant_blue">Blue</label>
-                                <input type="radio" id="color_variant_violet" name="color" class="variant"> <label
-                                    class="item" for="color_variant_violet">Violet</label>
-                                <input type="radio" id="color_variant_green" name="color" class="variant"> <label
-                                    class="item" for="color_variant_green">Green</label>
-                            </div>
-                        </div>
-
-
-                        <div class="choise">
-                            <input type="checkbox" id="control_size" class="control">
-                            <label class="control_item" for="control_size">CHOOSE SIZE<i class="fa fa-angle-down"
-                                    aria-hidden="true"></i>
-                            </label>
-                            <div class="choise_box">
-                                <input type="radio" id="size_S" name="size" class="variant"> <label class="item"
-                                    for="size_S">S</label>
-                                <input type="radio" id="size_M" name="size" class="variant"> <label class="item"
-                                    for="size_M">M</label>
-                                <input type="radio" id="size_L" name="size" class="variant"> <label class="item"
-                                    for="size_L">L</label>
-                            </div>
-                        </div>
-
-                        <div class="choise">
-                            <input type="checkbox" id="control_quan" class="control">
-                            <label class="control_item" for="control_quan">QUANTITY<i class="fa fa-angle-down"
-                                    aria-hidden="true"></i>
-                            </label>
-                            <div class="choise_box">
-                                <input type="radio" id="qua_1" name="quanity" class="variant"> <label class="item"
-                                    for="qua_1">1</label>
-                                <input type="radio" id="qua_2" name="quanity" class="variant"> <label class="item"
-                                    for="qua_2">2</label>
-                            </div>
-                        </div>
+                <div class="select_block">
+                    <select form="add_to_cart" required name="SIZE" class="select_item">
+                        <option class="option_item" value="#">CHOOSE SIZE</option>
+                        <option class="option_item" value="SIZE1">XS</option>
+                        <option class="option_item" value="SIZE2">S</option>
+                        <option class="option_item" value="SIZE3">M</option>
+                        <option class="option_item" value="SIZE4">L</option>
+                    </select>
+                </div>
+                <div class="select_block">
+                    <div class="choise_product">
+                        <input type="checkbox" id="quantity_product" class="control">
+                        <label class="control_item control_i_product" for="quantity_product">QUANTITY<i
+                                class="fa fa-angle-down" aria-hidden="true"></i>
+                        </label>
+                        <input type="number" step="1" min="1" max="100" pattern="[1-100]" name="quantity" value="1"
+                            required title="Введите количество" class="product_quantity">
                     </div>
-
-
-                    <a href="#" class="product_add">
-                        <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
-                        <p class="product_add_text">Add to Cart</p>
-                    </a>
                 </div>
-            </section>
+            </form>
+            <button type="submit" class="product_add" form="add_to_cart">
+                <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+                <p class="product_add_text">Add to Cart</p>
+            </button>
         </div>
 
-        <article class="card_box container">
-            <figure class="card">
+        <section class="card_box_product container">
+            <figure class="card  card_page_product">
                 <a href="product.html" class="card_link">
                     <img class="card_img" src="product_image/p_card_1.png" alt="photo">
                     <div class="card_info">
@@ -211,7 +187,7 @@
                 </div>
             </figure>
 
-            <figure class="card">
+            <figure class="card card_page_product">
                 <a href="product.html" class="card_link">
                     <img class="card_img" src="product_image/p_card_2.png" alt="photo">
                     <div class="card_info">
@@ -229,7 +205,7 @@
                 </div>
             </figure>
 
-            <figure class="card">
+            <figure class="card card_page_product">
                 <a href="product.html" class="card_link">
                     <img class="card_img" src="product_image/p_card_3.png" alt="photo">
                     <div class="card_info">
@@ -246,7 +222,7 @@
                     </a>
                 </div>
             </figure>
-        </article>
+        </section>
     </div>
 
     <footer class="footer">
@@ -260,7 +236,7 @@
                     </figure>
                     <div class="subscribe">
                         <div class="subscribe_text">
-                            <h3 class="subscribe_head">subscribe</h3>
+                            <h2 class="subscribe_head">subscribe</h2>
                             <p class="subscribe_text_p">FOR OUR NEWLETTER AND PROMOTION</p>
                         </div>
                         <form action="#" class="form_email" id="subscribe_email">

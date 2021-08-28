@@ -31,11 +31,11 @@
                 </form>
             </div>
 
-            <nav class="header_right">
-                <div class="menu">
+            <div class="header_right">
+                <nav class="menu">
                     <a class="header_right_link" href="#"><img src="image/menu.svg" alt="menu"></a>
                     <div class="menu_box">
-                        <h3 class="menu_box_heading">MENU</h3>
+                        <h2 class="menu_box_heading">MENU</h2>
                         <div class="menu_box_item">
                             <h3 class="item_heading">MAN</h3>
                             <a class="item_link" href="#">Accessories</a>
@@ -61,74 +61,71 @@
                             <a class="item_link" href="#">Bags</a>
                         </div>
                     </div>
-                </div>
-                <a class="header_right_link" href="registration.html"><img src="image/personal_account.svg"
+                </nav>
+                <a class="header_right_link header_home" href="registration.html"><img src="image/personal_account.svg"
                         alt="account"></a>
                 <a class="header_cart" href="cart.html"><img src="image/basket.svg" alt="basket"></a>
-            </nav>
+            </div>
         </div>
     </header>
 
     <div class="breadcrumb_background">
-        <nav class="breadcrumb_nav container">
+        <div class="breadcrumb_nav breadcrumb_padding container">
             <h2 class="breadcrumb_heading">SHOPPING CART</h2>
-            <!-- ХЛЕБНЫЕ КРОШКИ СПРАВА. ВДРУГ ПРИГОДЯТСЯ... -->
-            <!-- <ol class="breadcrumb">
-                <li class="breadcrumb_item"><a class="breadcrumb_link" href="index.html">Home</a></li>
-                <li class="breadcrumb_item"><a class="breadcrumb_link breadcrumb_float" href="#"> Men</a></li>
-                <li class="breadcrumb_item active breadcrumb_float" style="color: #F16D7F;"> New arrivals</li>
-            </ol> -->
-        </nav>
+        </div>
     </div>
 
-    <div class="background_page">
+    <div class="background_page_cart">
         <div class="cart_box container">
             <section class="cart_product_box">
-
                 <figure class="cart_product">
                     <i class="fa fa-times" aria-hidden="true" style="font-size: 1.5em;"></i>
-                    <img src="cart_image/cart_img1.png" alt="photo">
+                    <a href="product.html" class="cart_link_to_product"><img class="cart_product_photo"
+                            src="cart_image/cart_img1.png" alt="photo">
+                    </a>
                     <figcaption class="cart_product_text_box">
                         <h2 class="product_text_heading">MANGO PEOPLE T-SHIRT</h2>
                         <p class="cart_product_text">Price: <span class="pink_text">$300</span></p>
                         <p class="cart_product_text">Color: Red</p>
                         <p class="cart_product_text">Size: XL </p>
                         <p class="cart_product_text">Quantity: <input type="number" step="1" min="1" max="100"
-                                name="quantity" value="1" title="Введите количество" class="cart_product_quantity"></p>
+                                pattern="[1-100]" name="quantity" value="1" title="Введите количество"
+                                class="cart_product_quantity"></p>
                     </figcaption>
                 </figure>
 
                 <figure class="cart_product">
                     <i class="fa fa-times" aria-hidden="true" style="font-size: 1.5em;"></i>
-                    <img src="cart_image/cart_img2.png" alt="photo">
+                    <a href="product.html" class="cart_link_to_product"><img class="cart_product_photo"
+                            src="cart_image/cart_img2.png" alt="photo"></a>
                     <figcaption class="cart_product_text_box">
                         <h2 class="product_text_heading">MANGO PEOPLE T-SHIRT</h2>
                         <p class="cart_product_text">Price: <span class="pink_text">$300</span></p>
                         <p class="cart_product_text">Color: Red</p>
                         <p class="cart_product_text">Size: XL </p>
                         <p class="cart_product_text">Quantity: <input type="number" step="1" min="1" max="100"
-                                name="quantity" value="1" title="Введите количество" class="cart_product_quantity"></p>
+                                pattern="[1-100]" name="quantity" value="1" title="Введите количество"
+                                class="cart_product_quantity"></p>
                     </figcaption>
                 </figure>
 
                 <div class="cart_product_link">
-                    <a href="#" class="product_link">CLEAR SHOPPING CART</a>
-                    <a href="catalog.html" class="product_link">CONTINUE SHOPPING</a>
+                    <a href="#" class="product_link">Clear shopping cart</a>
+                    <a href="catalog.html" class="product_link">Continue shopping</a>
                 </div>
             </section>
 
-            <div class="shipping_adress_box">
-                <form action="#" class="shipping_adress" id="cart_form">
-                    <fieldset class="fieldset">
-                        <legend class="legend">SHIPPING ADRESS</legend>
-                        <input type="text" name="country" class="input_field" placeholder="Bangladesh">
-                        <input type="text" name="state" class="input_field input_black_text" placeholder="State">
-                        <input type="text" name="postcode" class="input_field input_black_text"
-                            placeholder="Postcode / Zip">
-                        <textarea name="cart_quote" id="cart_textarea" maxlength="140" form="cart_form"
-                            placeholder="GET A QUOTE"></textarea>
-                    </fieldset>
-                </form>
+            <form action="#" class="shipping_adress" id="cart_form">
+                <fieldset class="fieldset">
+                    <legend class="legend">SHIPPING ADRESS</legend>
+                    <input type="text" name="country" class="input_field" placeholder="Bangladesh">
+                    <input type="text" name="state" class="input_field input_black_text" placeholder="State">
+                    <input type="text" name="postcode" class="input_field input_black_text"
+                        placeholder="Postcode / Zip">
+                    <textarea name="cart_quote" id="cart_textarea" maxlength="140" form="cart_form"
+                        placeholder="GET A QUOTE"></textarea>
+                </fieldset>
+
 
                 <div class="checkout_box">
                     <p class="sub_total">SUB TOTAL <span class="span_sub_total">$900</span></p>
@@ -137,7 +134,7 @@
                     <button class="checkout_link" name="checkout" form="cart_form">PROCEED TO
                         CHECKOUT</button>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
 
@@ -152,7 +149,7 @@
                     </figure>
                     <div class="subscribe">
                         <div class="subscribe_text">
-                            <h3 class="subscribe_head">subscribe</h3>
+                            <h2 class="subscribe_head">subscribe</h2>
                             <p class="subscribe_text_p">FOR OUR NEWLETTER AND PROMOTION</p>
                         </div>
                         <form action="#" class="form_email" id="subscribe_email">
