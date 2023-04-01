@@ -1,1149 +1,1124 @@
 * {
-    margin: 0;
-    padding: 0;
-    outline: none;
+  margin: 0;
+  padding: 0;
+  outline: none;
 }
 body {
-    font-family: sans-serif;
+  font-family: sans-serif;
 }
 
-$pink_text: #F16D7F;
+$pink_text: #f16d7f;
 
 .pink_text {
-    color: $pink_text;
+  color: $pink_text;
 }
 
 .container {
-    max-width: 1140px;
-    margin: 0 auto;
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
-
 .header {
-    background-color: #222222;
-    height: 75px;
-    display: flex;
-    align-items: center;
+  background-color: #222222;
+  height: 75px;
+  display: flex;
+  align-items: center;
 }
 
 .header_box {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header_left {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .logo {
-    padding: 16px 16px 12px 0;
+  padding: 16px 16px 12px 0;
 }
 
 .button_search_field {
-    padding: 18px 18px 18px 25px;
-    background: #222;
-    color: #FFF;
-    border: transparent;
-    cursor: pointer;
+  padding: 18px 18px 18px 25px;
+  background: #222;
+  color: #fff;
+  border: transparent;
+  cursor: pointer;
 }
 
 #search {
-    font: 400 16px/50px 'Lato';
-    width: 0px;
-    border-radius: 20px;
-    border: transparent;
-    height: 50px;
-    color: #222224;
-    text-align: center;
-    background: #F1E4E6;
-    transition: width .55s ease-in-out;
+  font: 400 16px/50px "Lato";
+  width: 0px;
+  border-radius: 20px;
+  border: transparent;
+  height: 50px;
+  color: #222224;
+  text-align: center;
+  background: #f1e4e6;
+  transition: width 0.55s ease-in-out;
 }
 
 .search_field:hover .button_search_field {
-    color: $pink_text;
+  color: $pink_text;
 }
 
-
-.search_field:hover #search,  #search:focus, #search:active #search {
-    width: 700px;
+.search_field:hover #search,
+#search:focus,
+#search:active #search {
+  width: 700px;
 }
 
-
-
-/*ПРАВАЯ СТОРОНА ХЕДЕРА*/ 
+/*ПРАВАЯ СТОРОНА ХЕДЕРА*/
 
 .header_right {
-    display: flex;
-    align-items: baseline;
+  display: flex;
+  align-items: baseline;
 }
 
 .menu {
-    position: relative;
+  position: relative;
 }
 
 .header_right_link {
-    padding: 15px;
+  padding: 15px;
 }
 
 .header_cart {
-    padding: 15px 0 15px 15px;
+  padding: 15px 0 15px 15px;
+  position: relative;
 }
 
+.count_goods {
+  position: absolute;
+  background-color: #f16d7f;
+  color: #fff;
+  padding: 1px 5px;
+  right: 0px;
+  font-size: 12px;
+  top: 5px;
+  border: none;
+  border-radius: 50%;
+}
 
 .menu_box {
-    display: none;
-    flex-direction: column;
-    background: #FFFFFF;
-    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-    border-radius: 5px;
-    width: 232px;
-    height: 774px;
-    box-sizing: border-box;
-    position: absolute;
-    top: 38px;
-    left: -64px;
+  display: none;
+  flex-direction: column;
+  background: #ffffff;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  border-radius: 5px;
+  width: 232px;
+  height: 774px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 38px;
+  left: -64px;
 }
 
 .menu:hover .menu_box {
-    display: flex;
-    z-index: 4;
+  display: flex;
+  z-index: 4;
 }
 
 .menu_box::before {
-    content: '';
-    display: block;
-    height: 12px;
-    width: 12px;
-    position: absolute;
-    background-color: #FFFFFF;
-    border-left: 1px solid rgba(0, 0, 0, 0.21);
-    border-top: 1px solid rgba(0, 0, 0, 0.21);
-    top: -6px;
-    left: 90px;
-    transform: rotate(45deg);
+  content: "";
+  display: block;
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  background-color: #ffffff;
+  border-left: 1px solid rgba(0, 0, 0, 0.21);
+  border-top: 1px solid rgba(0, 0, 0, 0.21);
+  top: -6px;
+  left: 90px;
+  transform: rotate(45deg);
 }
 
 .menu_box_heading {
-    font: 700 14px/17px 'Lato';
-    color: #000000;
-    margin: 37px 0 9.5px 34px;
-    text-transform: uppercase;
+  font: 700 14px/17px "Lato";
+  color: #000000;
+  margin: 37px 0 9.5px 34px;
+  text-transform: uppercase;
 }
 
 .item_heading {
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    color: $pink_text;
-    margin: 14.5px 0 6.5px 34px;
-    text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: $pink_text;
+  margin: 14.5px 0 6.5px 34px;
+  text-transform: uppercase;
 }
 
 .item_link {
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    color: #6F6E6E;
-    padding-left: 54px;
-    padding-top: 5.5px;
-    padding-bottom: 5.5px;
-    display: block;
-    text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6f6e6e;
+  padding-left: 54px;
+  padding-top: 5.5px;
+  padding-bottom: 5.5px;
+  display: block;
+  text-decoration: none;
 }
 
 .item_link:hover {
-    color: #FFFFFF;
-    background: $pink_text;
-    transition: all 0.2s ease;
+  color: #ffffff;
+  background: $pink_text;
+  transition: all 0.2s ease;
 }
-
-
 
 /*БЛОК МУЖИК С ЛОГОТИПОМ СПРАВА*/
 .brand {
-    background: #F1E4E6;
+  background: #f1e4e6;
 }
 
 .brand_box {
-    display: flex;
+  display: flex;
 }
 
 .brand_men {
-    width: 50%;
+  width: 50%;
 }
 
 .brand_box_head {
-    display: flex;
-    justify-content: center;
-    height: 92px;
-    width: 50%;
-    align-self: center;
+  display: flex;
+  justify-content: center;
+  height: 92px;
+  width: 50%;
+  align-self: center;
 }
 
 .vertical_line {
-    height: 100%;
-    width: 12px;
-    background: $pink_text;
-    margin-right: 16px;
+  height: 100%;
+  width: 12px;
+  background: $pink_text;
+  margin-right: 16px;
 }
 
 .brand_box_text {
-    width: 377px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  width: 377px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .brand_box_h1 {
-    font: 900 48px/42px 'Lato';
-    text-transform: uppercase;
-    color: #222222;
+  font: 900 48px/42px "Lato";
+  text-transform: uppercase;
+  color: #222222;
 }
 
 .brand_box_h2 {
-    font: 700 37px/42px 'Lato';
-    font-variant: small-caps;
-    color: #222222;
+  font: 700 37px/42px "Lato";
+  font-variant: small-caps;
+  color: #222222;
 }
-
-
-
 
 /*БЛОК РАЗДЕЛЫ "ДЛЯ ЖЕНЩИН" "ДЛЯ МУЖЧИН" "ДЛЯ ДЕТЕЙ"...*/
 .background_page_index {
-    background: #E5E5E5;
-    padding-top: 65px;
-    padding-bottom: 95.5px;
+  background: #e5e5e5;
+  padding-top: 65px;
+  padding-bottom: 95.5px;
 }
 
 .chapters_box {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .chapters_card {
-    position: relative;
+  position: relative;
 }
 
 .chapters_link {
-    display: block;
-    text-decoration: none;
+  display: block;
+  text-decoration: none;
 }
 
 .chapters_img {
-    filter: brightness(50%);
-    width: 100%;
-    display: block;
+  filter: brightness(50%);
+  width: 100%;
+  display: block;
 }
 
 .chapters_text_box {
-    text-align: center;
-    width: 100%;
-    position: absolute;
-    top: 40%;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 40%;
 }
 
 .chapters_text {
-    font: 400 16px/19px 'Lato';
-    text-transform: uppercase;
-    color: #FFFFFF;
-}         
+  font: 400 16px/19px "Lato";
+  text-transform: uppercase;
+  color: #ffffff;
+}
 
 .chapters_heading {
-    text-transform: uppercase;
-    color: $pink_text;
-    font: 700 24px/28px 'Lato';
+  text-transform: uppercase;
+  color: $pink_text;
+  font: 700 24px/28px "Lato";
 }
 
 .chapters_accesories {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .accesories_text_box {
-    top: 65px;
+  top: 65px;
 }
 
 .chapters_card:hover .chapters_img {
-    filter: none;
-    transition: filter .55s ease;
+  filter: none;
+  transition: filter 0.55s ease;
 }
-
-
 
 /*БЛОК С КАРТОЧКАМИ ТОВАРОВ*/
 
 .catalog_box {
-    margin-top: 96px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} 
+  margin-top: 96px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-.catalog_head {  
-    font: 400 30px/36px 'Lato';
-    color: #222222;
-    text-transform: capitalize;
-   
+.catalog_head {
+  font: 400 30px/36px "Lato";
+  color: #222222;
+  text-transform: capitalize;
 }
 
 .catalog_text {
-    font: 400 14px/17px 'Lato';
-    color: #9F9F9F;
-    margin-top: 6px;
-    width: 340px;
-    text-align: center;
+  font: 400 14px/17px "Lato";
+  color: #9f9f9f;
+  margin-top: 6px;
+  width: 340px;
+  text-align: center;
 }
 
 .card_box {
-    margin-top: 48px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  margin-top: 48px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .card {
-    width: 360px;
-    background: #F8F8F8;
-    position: relative;
-    margin-bottom: 30px;
+  width: 360px;
+  background: #f8f8f8;
+  position: relative;
+  margin-bottom: 30px;
 }
 
 .card_link {
-    display: block;
-    text-decoration: none;
+  display: block;
+  text-decoration: none;
 }
 
-
 .card_img {
-    width: 100%;
+  width: 100%;
 }
 
 .card:hover {
-    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
 }
 
 .card:hover .card_img {
-    filter: brightness(50%);
+  filter: brightness(50%);
 }
 
 .card:hover .add_box {
-    display: flex;
+  display: flex;
 }
 
 .card_info {
-    padding: 24px 29px 20px 16px;
+  padding: 24px 29px 20px 16px;
 }
 
 .card_head {
-    font: 400 13px/16px 'Lato';
-    color: #000000;
+  font: 400 13px/16px "Lato";
+  color: #000000;
 }
 
 .card_text {
-    font: 300 14px/17px 'Lato';
-    color: #5D5D5D;
-    margin: 13px 0 18px 0;
+  font: 300 14px/17px "Lato";
+  color: #5d5d5d;
+  margin: 13px 0 18px 0;
 }
 
 .card_price {
-    font: 400 16px/19px 'Lato';
-    color: $pink_text;
+  font: 400 16px/19px "Lato";
+  color: $pink_text;
 }
 
 .add_box {
-    position: absolute;
-    top: 188.5px;
-    display: none;
-    justify-content: center;
-    width: 100%;
+  position: absolute;
+  top: 188.5px;
+  display: none;
+  justify-content: center;
+  width: 100%;
 }
 
 .add {
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    border: 1px solid #FFFFFF;
-    transition: box-shadow .2s ease;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ffffff;
+  transition: box-shadow 0.2s ease;
 }
 
 .add_text {
-    font: 400 14px/17px 'Lato';
-    color: #FFFFFF;
-    margin-left: 11px;
+  font: 400 14px/17px "Lato";
+  color: #ffffff;
+  margin-left: 11px;
 }
 
 .add:hover {
-    box-shadow: 0 0px 10px #FFFFFF;
+  box-shadow: 0 0px 10px #ffffff;
 }
 
 .catalog_button {
-    display: block;
-    font: 400 16px/19px 'Lato';
-    text-decoration: none;
-    color: $pink_text;
-    border: 1px solid $pink_text;
-    padding: 14px 38.5px;
-    margin-top: 18.5px; 
-    transition: all .2s ease;
+  display: block;
+  font: 400 16px/19px "Lato";
+  text-decoration: none;
+  color: $pink_text;
+  border: 1px solid $pink_text;
+  padding: 14px 38.5px;
+  margin-top: 18.5px;
+  transition: all 0.2s ease;
 }
 
 .catalog_button:hover {
-    border: 1px solid transparent;
-    color: #FFFFFF;
-    background-color: $pink_text;
+  border: 1px solid transparent;
+  color: #ffffff;
+  background-color: $pink_text;
 }
-
-
-
 
 /*БЛОК ПРЕИМУЩЕСТВА*/
 .advantages {
-    background: #222224;
+  background: #222224;
 }
 
 .advantages_box {
-    display: flex;
-    justify-content: space-between;
-    padding: 103px 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 103px 0;
 }
 
 .advantages_card {
-    text-align: center;
-    width: 360px;
+  text-align: center;
+  width: 360px;
 }
 
 .adv_img {
-    height: 35px;
+  height: 35px;
 }
 
 .advantages_head {
-    font: 400 20px/24px 'Lato';
-    color: #FBFBFB;
-    margin: 25px 0 16px 0;
+  font: 400 20px/24px "Lato";
+  color: #fbfbfb;
+  margin: 25px 0 16px 0;
 }
 
 .advantages_text {
-    font: 300 14px/17px 'Lato';
-    color: #FBFBFB;
+  font: 300 14px/17px "Lato";
+  color: #fbfbfb;
 }
-
-
-
-
 
 /*БЛОК ФУТЕР*/
 
 .background_footer {
-    background-image: url(image/background_footer.png);
-    background-size: cover;
+  background-image: url(image/background_footer.png);
+  background-size: cover;
 }
 
 .feedback {
-    background: rgba(244, 244, 244, 0.7);
+  background: rgba(244, 244, 244, 0.7);
 }
 
 .feedback_box {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 97px;
-    padding-bottom: 156px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 97px;
+  padding-bottom: 156px;
 }
 
 .comment {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 360px;
 }
 
 .comment_text {
-    font: 400 20px/24px 'Lato';
-    text-align: center;
-    color: #222224;
-    margin-top: 30px;
+  font: 400 20px/24px "Lato";
+  text-align: center;
+  color: #222224;
+  margin-top: 30px;
 }
 
 .subscribe {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 557px;
-    margin-top: 63px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 557px;
+  margin-top: 63px;
 }
 
 .subscribe_head {
-    font: 700 24px/37.7px 'Lato';
-    text-transform: uppercase;
-    color: #222224;
-    text-align: center;
+  font: 700 24px/37.7px "Lato";
+  text-transform: uppercase;
+  color: #222224;
+  text-align: center;
 }
 
 .subscribe_text_p {
-    font: 400 18px/30px 'Lato';
-    text-transform: uppercase;
-    text-align: center;
+  font: 400 18px/30px "Lato";
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .form_email {
-    display: flex;
-    margin-top: 22px;
+  display: flex;
+  margin-top: 22px;
 }
 
 .input_email {
-    font: 400 14px/49px 'Lato';
-    border: 1px solid transparent;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    width: 256px;
-    height: 49px;
-    background: #E1E1E1;
-    padding-left: 22px;
-    color: #222224;
-    opacity: 0.67;
-    box-sizing: border-box;
+  font: 400 14px/49px "Lato";
+  border: 1px solid transparent;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  width: 256px;
+  height: 49px;
+  background: #e1e1e1;
+  padding-left: 22px;
+  color: #222224;
+  opacity: 0.67;
+  box-sizing: border-box;
 }
 
 .button_email {
-    font: 400 14px/17px 'Lato';
-    background: $pink_text;
-    width: 100px;
-    height: 49px;
-    border-radius: 0 20px 20px 0;
-    border: 1px solid $pink_text;
-    color: #FFFFFF;
-    transition: all .2s ease;
+  font: 400 14px/17px "Lato";
+  background: $pink_text;
+  width: 100px;
+  height: 49px;
+  border-radius: 0 20px 20px 0;
+  border: 1px solid $pink_text;
+  color: #ffffff;
+  transition: all 0.2s ease;
 }
 
 .button_email:hover {
-    color: $pink_text;
-    background-color:  #E1E1E1;
-    cursor: pointer
+  color: $pink_text;
+  background-color: #e1e1e1;
+  cursor: pointer;
 }
 
-
 .footer_copyright {
-    background: #222224;
+  background: #222224;
 }
 
 .copyright {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 79px;
-    text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 79px;
+  text-align: center;
 }
 
 .copyright_text {
-    font: 400 16px/19px 'Lato';
-    color: #FBFBFB;
+  font: 400 16px/19px "Lato";
+  color: #fbfbfb;
 }
 
 .footer_links {
-    display: flex;
-    justify-content: space-between;
-    width: 148px;
+  display: flex;
+  justify-content: space-between;
+  width: 148px;
 }
 
 .links {
-    width: 32px;
-    height: 32px;
-    background: #FFFFFF;
-    text-decoration: none;
-    color: #000000;
-    text-align: center;
-    line-height: 32px;
-    border: 1px solid transparent;
-    transition: all .55s ease;
+  width: 32px;
+  height: 32px;
+  background: #ffffff;
+  text-decoration: none;
+  color: #000000;
+  text-align: center;
+  line-height: 32px;
+  border: 1px solid transparent;
+  transition: all 0.55s ease;
 }
 
 .links:hover {
-    background: $pink_text;
-    color: #FFFFFF;
+  background: $pink_text;
+  color: #ffffff;
 }
 
-
-
-
-
-/*СТИЛИ ДЛЯ СТРАНИЦЫ ПРОДУКТ*/ 
-
+/*СТИЛИ ДЛЯ СТРАНИЦЫ ПРОДУКТ*/
 
 .breadcrumb_background {
-    background: #F8F3F4;
+  background: #f8f3f4;
 }
 
 .breadcrumb_nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 148px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 148px;
 }
 
 .breadcrumb_heading {
-    font: 400 24px/29px 'Lato';
-    color: $pink_text;
-    text-transform: uppercase;
-    margin: 0;
+  font: 400 24px/29px "Lato";
+  color: $pink_text;
+  text-transform: uppercase;
+  margin: 0;
 }
 
 .breadcrumb {
-    list-style-type: none;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: center;
+  list-style-type: none;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
 }
 
 .breadcrumb_link {
-    display: block;
-    text-decoration: none;
-    font: 300 14px/17px 'Lato';
-    color: #636363;
+  display: block;
+  text-decoration: none;
+  font: 300 14px/17px "Lato";
+  color: #636363;
 }
 
 .breadcrumb_link:hover {
-    color: $pink_text;
+  color: $pink_text;
 }
 
 .active {
-    font: 700 14px/17px 'Lato';
-    color: $pink_text;
+  font: 700 14px/17px "Lato";
+  color: $pink_text;
 }
 
 .breadcrumb_float {
-    padding-left: 5px;
+  padding-left: 5px;
 }
 
 .breadcrumb_float::before {
-    float: left;
-    padding-right: 5px;
-    color: #6c757d;
-    content: "/";
-    font-weight: 300;
+  float: left;
+  padding-right: 5px;
+  color: #6c757d;
+  content: "/";
+  font-weight: 300;
 }
-
-
 
 /*КАРУСЕЛЬ*/
 .background_carousel {
-    background: #F7F7F7;
-    padding: 30px 0;
-    box-sizing: border-box;
+  background: #f7f7f7;
+  padding: 30px 0;
+  box-sizing: border-box;
 }
 
 .carousel_input {
-    display: none;
+  display: none;
 }
 
 .carousel {
-    position: relative;
-    width: 100vw;
-    height: 724px;
-    margin: 0 auto;
-    overflow: hidden;
-    user-select: none;
+  position: relative;
+  width: 100vw;
+  height: 724px;
+  margin: 0 auto;
+  overflow: hidden;
+  user-select: none;
 }
 
 .carousel__item {
-    position: absolute; 
-    top: 0;
-    display: none;
-    width: 100%;
-    height: 100%;
-    background-position-x: center;
-    background-position-y: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    transition: left 0.5s, transform 0.5s;
-    will-change: transform;
-    backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: left 0.5s, transform 0.5s;
+  will-change: transform;
+  backface-visibility: hidden;
 }
 
 .carousel__arrow {
-    display: none;
-    position: absolute;
-    top: 47%;
-    z-index: 3;
-    transform: translateY(-50%);
-    color: #000000;
-    background-color: rgba(42, 42, 42, 0.15);
-    cursor: pointer;
-    padding: 0 19px;
-    font-size: 21px;
-    line-height: 47px;
+  display: none;
+  position: absolute;
+  top: 47%;
+  z-index: 3;
+  transform: translateY(-50%);
+  color: #000000;
+  background-color: rgba(42, 42, 42, 0.15);
+  cursor: pointer;
+  padding: 0 19px;
+  font-size: 21px;
+  line-height: 47px;
 }
 
 .carousel__arrow:hover {
-    color: $pink_text;
+  color: $pink_text;
 }
 
-input:checked+div~div~div~div .carousel__item {
-    background-image: none !important;
+input:checked + div ~ div ~ div ~ div .carousel__item {
+  background-image: none !important;
 }
 
-input:checked+div *, input:checked+div+input+div .carousel__item, input:checked+div+input+div+input+div * {
-    display: block;
+input:checked + div *,
+input:checked + div + input + div .carousel__item,
+input:checked + div + input + div + input + div * {
+  display: block;
 }
 
-input:checked+div .carousel__item {
-    left: -100%; 
-    transform: scale(0.4);
+input:checked + div .carousel__item {
+  left: -100%;
+  transform: scale(0.4);
 }
 
-input:checked+div+input+div .carousel__item {
-    left: 0; 
-    transform: scale(1);
+input:checked + div + input + div .carousel__item {
+  left: 0;
+  transform: scale(1);
 }
 
-input:checked+div+input+div+input+div .carousel__item {
-    left: 100%; 
-    transform: scale(0.4);
+input:checked + div + input + div + input + div .carousel__item {
+  left: 100%;
+  transform: scale(0.4);
 }
 
-input:checked+div .carousel__arrow {
-    left: 0;
+input:checked + div .carousel__arrow {
+  left: 0;
 }
 
-input:checked+div+input+div+input+div .carousel__arrow {
-    right: 0;
+input:checked + div + input + div + input + div .carousel__arrow {
+  right: 0;
 }
 
-input:checked+div .carousel__arrow:before {
-    content: '❰';
+input:checked + div .carousel__arrow:before {
+  content: "❰";
 }
 
-input:checked+div+input+div+input+div .carousel__arrow:before {
-    content: '❱';
+input:checked + div + input + div + input + div .carousel__arrow:before {
+  content: "❱";
 }
 
-
-/*БЛОК ИНФОРМАЦИИ О ПРОДУКТЕ . СТРАНИЦА ПРОДУКТ*/ 
+/*БЛОК ИНФОРМАЦИИ О ПРОДУКТЕ . СТРАНИЦА ПРОДУКТ*/
 .background_page_product {
-    background: #E5E5E5;
-    padding-bottom: 98px;
+  background: #e5e5e5;
+  padding-bottom: 98px;
 }
 
 .product_info {
-    border: 1px solid #EAEAEA;
-    background: #FFFFFF;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    box-sizing: border-box;
-    padding: 65px 0;
-    transform: translateY(-64px);
+  border: 1px solid #eaeaea;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 65px 0;
+  transform: translateY(-64px);
 }
 
 .product_box_top {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .chapter_name {
-    text-transform: uppercase;
-    font: 300 14px/17px 'Lato';
-    color: $pink_text;
+  text-transform: uppercase;
+  font: 300 14px/17px "Lato";
+  color: $pink_text;
 }
 
 .product_small_line {
-    display: inline-block;
-    width: 63px;
-    height: 3px;
-    background-color: $pink_text;
-    border: none;
-    margin: 12px 0;
+  display: inline-block;
+  width: 63px;
+  height: 3px;
+  background-color: $pink_text;
+  border: none;
+  margin: 12px 0;
 }
 
 .product_name {
-    font: 300 18px/16px 'Lato';
-    color: #4D4D4D;
-    max-width: 360px;
-    margin: 0 24px;
+  font: 300 18px/16px "Lato";
+  color: #4d4d4d;
+  max-width: 360px;
+  margin: 0 24px;
 }
 
 .product_description {
-    display: inline-block;
-    font: 300 14px/17px 'Lato';
-    max-width: 555px;
-    color: #5E5E5E;
-    margin: 48px 24px 32px;
+  display: inline-block;
+  font: 300 14px/17px "Lato";
+  max-width: 555px;
+  color: #5e5e5e;
+  margin: 48px 24px 32px;
 }
 
 .product_price {
-    font: 300 24px/26px 'Lato';
-    color: $pink_text;
+  font: 300 24px/26px "Lato";
+  color: $pink_text;
 }
 
 .product_big_line {
-    border: 1px solid #EAEAEA;
-    width: 641px;
-    display: inline-block;
-    margin-top: 65px;
+  border: 1px solid #eaeaea;
+  width: 641px;
+  display: inline-block;
+  margin-top: 65px;
 }
 
 .product_box_bottom {
-    display: flex;
-    align-self: center;
-    margin-top: 65px;
-    margin-bottom: 49px;
+  display: flex;
+  align-self: center;
+  margin-top: 65px;
+  margin-bottom: 49px;
 }
-
 
 /*БЛОК ВЫБОРА ЦВЕТА, РАЗМЕРА...*/
 
-
-
 .select_block {
-    width: 135px;
-    text-align: center;
+  width: 135px;
+  text-align: center;
 }
 
 .select_item {
-    background: none;
-    border: none;
-    color: #6F6E6E;
-    font: 400 14px/17px 'Lato';
+  background: none;
+  border: none;
+  color: #6f6e6e;
+  font: 400 14px/17px "Lato";
 }
 
 .option_item {
-    background: #FFFFFF;
-    font: 400 14px/17px 'Lato';
-    color: $pink_text;
-    margin-right: -70px;
-    transition: all .2s ease;
+  background: #ffffff;
+  font: 400 14px/17px "Lato";
+  color: $pink_text;
+  margin-right: -70px;
+  transition: all 0.2s ease;
 }
 
 .select_item:hover {
-    cursor: pointer;
-    color: $pink_text;
+  cursor: pointer;
+  color: $pink_text;
 }
 
 .option_item:hover {
-    background: $pink_text;
-    color: #FFFFFF;
+  background: $pink_text;
+  color: #ffffff;
 }
 
-
 .choise_product {
-    position: relative;
+  position: relative;
 }
 
 .control_i_product:hover {
-    color: $pink_text;
+  color: $pink_text;
 }
 
 .product_quantity {
-    width: 90px;
-    text-align: center;
-    margin-top: 10px;
-    display: none;
+  width: 90px;
+  text-align: center;
+  margin-top: 10px;
+  display: none;
 }
 
 .control:checked + .control_item + .product_quantity {
-    display: initial;
-    z-index: 1;
-    position: absolute;
-    right: 20px;
-    bottom: -25px;
+  display: initial;
+  z-index: 1;
+  position: absolute;
+  right: 20px;
+  bottom: -25px;
 }
 /*КОНЕЦ БЛОКА ВЫБОРА ЦВЕТА И РАЗМЕРА СТРАНИЦЫ ПРОДУКТ*/
 
-
-
 .product_add {
-    height: 47px;
-    display: flex;
-    align-items: center;
-    border: 1px solid $pink_text;
-    background-color: #FFFFFF;
-    justify-content: center;
-    width: max-content;
-    align-self: center;
+  height: 47px;
+  display: flex;
+  align-items: center;
+  border: 1px solid $pink_text;
+  background-color: #ffffff;
+  justify-content: center;
+  width: max-content;
+  align-self: center;
 }
 
 .fa-shopping-cart {
-    color: $pink_text;
-    padding: 0 23.5px;
+  color: $pink_text;
+  padding: 0 23.5px;
 }
 
 .product_add_text {
-    font: 400 16px/19px 'Lato';
-    color: $pink_text;
-    padding-right: 56.5px;
-    transition: all .2s ease;
+  font: 400 16px/19px "Lato";
+  color: $pink_text;
+  padding-right: 56.5px;
+  transition: all 0.2s ease;
 }
 
 .product_add:hover {
-    border: 1px solid $pink_text;
-    background-color: $pink_text;
-    cursor: pointer;
+  border: 1px solid $pink_text;
+  background-color: $pink_text;
+  cursor: pointer;
 }
 
 .product_add:hover .fa-shopping-cart {
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
 .product_add:hover .product_add_text {
-    color: #FFFFFF;
+  color: #ffffff;
 }
-
 
 .card_box_product {
-    margin-top: 65px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  margin-top: 65px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-
-
-
 /*СТРАНИЦА КАТАЛОГ*/
-/*БЛОК С ФИЛЬТРАМИ*/ 
+/*БЛОК С ФИЛЬТРАМИ*/
 .background_page_catalog {
-    background: #E5E5E5;
-    padding-top: 51px;
-    padding-bottom: 95.5px;
+  background: #e5e5e5;
+  padding-top: 51px;
+  padding-bottom: 95.5px;
 }
 
 .filter_box {
-    position: relative;
+  position: relative;
 }
 
 .filter {
-    display: none;
+  display: none;
 }
 
 .filter_check {
-    font: 600 14px/17px Lato;
-    color: #000000;
-    padding: 5px 0px;
-    margin-left: 17px;
-    position: absolute;
-    top: -4px;
-    z-index: 2;
-    cursor: pointer;
-    text-transform: uppercase;
+  font: 600 14px/17px Lato;
+  color: #000000;
+  padding: 5px 0px;
+  margin-left: 17px;
+  position: absolute;
+  top: -4px;
+  z-index: 2;
+  cursor: pointer;
+  text-transform: uppercase;
 }
 
 .fa-filter {
-    font: 600 14px/17px;
-    padding-left: 11px;
+  font: 600 14px/17px;
+  padding-left: 11px;
 }
 
 .fa-filter_hidden {
-    padding-left: 0;
+  padding-left: 0;
 }
 
 .filter_check_hidden {
-    display: none;
+  display: none;
 }
 
-.filter:checked  + .filter_check {
-    color: $pink_text;
+.filter:checked + .filter_check {
+  color: $pink_text;
 }
 
-.filter:checked  ~ .filter_box_mini {
-    display: block;
+.filter:checked ~ .filter_box_mini {
+  display: block;
 }
 
 .filter_box_mini {
-    position: absolute;
-    z-index: 1;
-    top: -13px;
-    left: 0px;
-    padding: 46px 17px 17px 17px;
-    box-sizing: border-box;
-    background: #FFFFFF;
-    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-    width: 360px;
-    display: none;
+  position: absolute;
+  z-index: 1;
+  top: -13px;
+  left: 0px;
+  padding: 46px 17px 17px 17px;
+  box-sizing: border-box;
+  background: #ffffff;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  width: 360px;
+  display: none;
 }
 
 .filter_box_supermini {
-    margin-bottom: 17px;
-    width: 100%;
+  margin-bottom: 17px;
+  width: 100%;
 }
 
 .end_element {
-    margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 .filter_heading {
-    color: #6F6E6E;
-    font: 400 14px/17px 'Lato';
-    text-transform: uppercase;
-    display: flex;
-    height: 37px;
-    align-items: center;
-    border-bottom: 1px solid #EBEBEB;
-    border-left: 5px solid $pink_text;
-    padding-left: 11px;
-    cursor: pointer;
+  color: #6f6e6e;
+  font: 400 14px/17px "Lato";
+  text-transform: uppercase;
+  display: flex;
+  height: 37px;
+  align-items: center;
+  border-bottom: 1px solid #ebebeb;
+  border-left: 5px solid $pink_text;
+  padding-left: 11px;
+  cursor: pointer;
 }
 
 .filter_link {
-    text-decoration: none;
-    text-transform: capitalize;
-    font: 400 14px/17px 'Lato';
-    color: #6F6E6E;
-    border: 1px solid transparent;
-    box-sizing: border-box;
-    display: none;
-    padding: 6px 0 6px 17px;
-    width: 100%;
-    transition: all .2s ease;
+  text-decoration: none;
+  text-transform: capitalize;
+  font: 400 14px/17px "Lato";
+  color: #6f6e6e;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  display: none;
+  padding: 6px 0 6px 17px;
+  width: 100%;
+  transition: all 0.2s ease;
 }
 
 .filter:checked + .filter_heading {
-    color: $pink_text;
+  color: $pink_text;
 }
 
 .filter:checked ~ .filter_link {
-    display: block;
+  display: block;
 }
 
 .filter_link:hover {
-    color: #FFFFFF;
-    background: $pink_text;
-    border-radius: 20px;
+  color: #ffffff;
+  background: $pink_text;
+  border-radius: 20px;
 }
 
 .filter_block {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
-
 
 /*ВЫПАДАЮЩИЕ ОКНА ВЫБОРА РАЗМЕРА, ЦВЕТА И Т.Д. НА СТРАНИЦЕ "КАТАЛОГ"*/
 .choise_block {
-    display: flex;
-    align-items: center;
-    margin: 65px 0 49px 0;
+  display: flex;
+  align-items: center;
+  margin: 65px 0 49px 0;
 }
 
 .choise {
-    position: relative;
+  position: relative;
 }
 
-.control, .variant {
-    display: none;
+.control,
+.variant {
+  display: none;
 }
 
 .control_item {
-    font: 400 14px/17px 'Lato';
-    text-transform: uppercase;
-    color: #6F6E6E;
-    padding: 10px 14px;
+  font: 400 14px/17px "Lato";
+  text-transform: uppercase;
+  color: #6f6e6e;
+  padding: 10px 14px;
 }
 
 .fa-angle-down {
-    padding-left: 10px;
+  padding-left: 10px;
 }
 
 .control_item:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .control:checked + .control_item {
-    color: $pink_text;
+  color: $pink_text;
 }
 
 .control:checked + .control_item + .choise_box {
-    left: 0px;
+  left: 0px;
 }
 
 .choise_box {
-    position: absolute;
-    z-index: 1;
-    left: -3000px;
-    top: 20px;
-    padding: 5px 10px;
-    width: 100%;
-    box-sizing: border-box;
-    background: #F7F7F7;
-    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  position: absolute;
+  z-index: 1;
+  left: -3000px;
+  top: 20px;
+  padding: 5px 10px;
+  width: 100%;
+  box-sizing: border-box;
+  background: #f7f7f7;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 }
 
 .item {
-    display: block;
-    font: 400 14px/16px Lato;
-    color: #6F6E6E;
-    padding: 5px 10px;
-    box-sizing: border-box;
-    width: 100%;
+  display: block;
+  font: 400 14px/16px Lato;
+  color: #6f6e6e;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .item:hover {
-    background: $pink_text;
-    color: #FFFFFF;
-    transition: .55s ease;
-    border-radius: 20px;
-    cursor: pointer;
+  background: $pink_text;
+  color: #ffffff;
+  transition: 0.55s ease;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
 .variant:checked + .item {
-    background: $pink_text;
-    color: hsl(0, 0%, 100%);
-    border-radius: 20px;
+  background: $pink_text;
+  color: hsl(0, 0%, 100%);
+  border-radius: 20px;
 }
-
 
 /*СТИЛИЗАЦИЯ ЧЕКБОКСОВ*/
 .variant_check {
-    position: absolute;
-    z-index: -1;
-    opacity: 0;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
 }
 
 .variant_check + .item_check {
-    display: block;
-    align-items: center;
-    user-select: none;
-    cursor: pointer;
-    padding: 5px 0px;
-    font: 400 14px/16px 'Lato';
-    color: #6F6E6E;
+  display: block;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+  padding: 5px 0px;
+  font: 400 14px/16px "Lato";
+  color: #6f6e6e;
 }
 
-
 .variant_check + .item_check::before {
-    content: '';
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    flex-shrink: 0;
-    flex-grow: 0;
-    border: 1px solid #EBEBEB;
-    margin-right: 10px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 50% 50%;
-    vertical-align: -13%;
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #ebebeb;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  vertical-align: -13%;
 }
 
 .variant_check:checked + .item_check::before {
-    border-color: $pink_text;
-    background-color: $pink_text;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+  border-color: $pink_text;
+  background-color: $pink_text;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
 }
 
 /* стили при наведении курсора на checkbox */
 .variant_check:not(:disabled):not(:checked) + .item_check:hover::before {
-    border-color: $pink_text;
+  border-color: $pink_text;
 }
-  
+
 /* стили для активного состояния чекбокса (при нажатии на него) */
 .variant_check:not(:disabled):active + .item_check::before {
-    background-color: $pink_text;
-    border-color: $pink_text;
+  background-color: $pink_text;
+  border-color: $pink_text;
 }
 
 /*  стили для чекбокса, находящегося в фокусе 
@@ -1161,298 +1136,292 @@ input:checked+div+input+div+input+div .carousel__arrow:before {
      background-color: #EBEBEB;
 }*/
 
-
-
 .card_box_catalog {
-    margin-top: 65px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  margin-top: 65px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .pagination_box {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 18.5px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 18.5px;
 }
 
 .pagination {
-    display: inline-block;
-    height: 43px;
-    border: 1px solid #B1B1B1;
+  display: inline-block;
+  height: 43px;
+  border: 1px solid #b1b1b1;
 }
 
 .pagination_link {
-    font: 300 16px/43px 'Lato';
-    color: #6F6E6E;
-    float: left;
-    padding: 0px 13.1px;
-    text-decoration: none;
-    text-align: center;
+  font: 300 16px/43px "Lato";
+  color: #6f6e6e;
+  float: left;
+  padding: 0px 13.1px;
+  text-decoration: none;
+  text-align: center;
 }
 
 .pagination .active {
-    border: 1px solid $pink_text;
-    color: $pink_text;
-    border-radius: 5px;
+  border: 1px solid $pink_text;
+  color: $pink_text;
+  border-radius: 5px;
 }
 
 .pagination_link:hover:not(.active) {
-    background-color: #ddd;
-    border-radius: 5px;
+  background-color: #ddd;
+  border-radius: 5px;
 }
 
-.fa-chevron-left, .fa-chevron-right {
-    color: #000000;
+.fa-chevron-left,
+.fa-chevron-right {
+  color: #000000;
 }
-
-
 
 /*СТРАНИЦА РЕГИСТРАЦИИ*/
 
 .background_page_registration {
-    background: #E5E5E5;
-    padding-top: 64px;
-    padding-bottom: 96px;
+  background: #e5e5e5;
+  padding-top: 64px;
+  padding-bottom: 96px;
 }
 
 .registration_box {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .registration_form {
-    margin-right: 22px;
+  margin-right: 22px;
 }
 
-.fieldset, .fieldset_registration {
-    border: none;
-    width: 360px;
+.fieldset,
+.fieldset_registration {
+  border: none;
+  width: 360px;
 }
 
 .legend {
-    font: 300 16px/19px 'Lato';
-    color: #222222;
+  font: 300 16px/19px "Lato";
+  color: #222222;
 }
 
 .input_field {
-    display: block;
-    margin-top: 21px;
-    padding: 12.5px 0 15.5px 17px;
-    color: #B1B1B1;
-    border: 1px solid #A4A4A4;
-    width: 100%;
-    box-sizing: border-box;
+  display: block;
+  margin-top: 21px;
+  padding: 12.5px 0 15.5px 17px;
+  color: #b1b1b1;
+  border: 1px solid #a4a4a4;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .form_radiobutton {
-    margin: 34px 0;
-    display: flex;
+  margin: 34px 0;
+  display: flex;
 }
 
 .radio_gender {
-    position: absolute;
-    z-index: -1;
-    opacity: 0;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
 }
 
 .label_gender {
-    display: inline-flex;
-    user-select: none;
-    cursor: pointer;
-    padding: 5px 10px;
-    font: 300 11px/19px 'Lato';
-    color: #000000;
+  display: inline-flex;
+  user-select: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  font: 300 11px/19px "Lato";
+  color: #000000;
 }
 
 .label_other {
-    display: none;
+  display: none;
 }
 
 .radio_gender + .label_gender::before {
-    content: '';
-    display: inline-block;
-    width: 17px;
-    height: 17px;
-    border: 1px solid #A4A4A4;
-    border-radius: 50%;
-    margin-right: 10px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 50% 50%;
+  content: "";
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  border: 1px solid #a4a4a4;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
 }
 
 /* стили при наведении курсора на радиокнопку */
 .radio_gender:not(:disabled):not(:checked) + .label_gender:hover::before {
-    border-color: $pink_text;
+  border-color: $pink_text;
 }
-  
+
 /* стили для активного состояния радиокнопки (при нажатии на неё) */
 .radio_gender:not(:disabled):active + .label_gender::before {
-    background-color: $pink_text;
-    border-color: $pink_text;
+  background-color: $pink_text;
+  border-color: $pink_text;
 }
 
 /*стили для активной радиокнопки*/
 .radio_gender:checked + .label_gender::before {
-    border-color: $pink_text;
-    background-color: $pink_text;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+  border-color: $pink_text;
+  background-color: $pink_text;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
 }
 
 .form_text {
-    width: 100%;
-    font: 300 13px/16px 'Lato';
-    color: #B1B1B1;
-    margin-top: 15.5px;
+  width: 100%;
+  font: 300 13px/16px "Lato";
+  color: #b1b1b1;
+  margin-top: 15.5px;
 }
 
 .form_button {
-    height: 50px;
-    background: $pink_text;
-    color: #FFFFFF;
-    border: 1px solid transparent;
-    font: 400 14px/50px 'Lato';
-    text-transform: uppercase;
-    text-align: center;
-    margin-top: 39px;
-    padding: 0 29px;
-    transition: all .2s ease;
+  height: 50px;
+  background: $pink_text;
+  color: #ffffff;
+  border: 1px solid transparent;
+  font: 400 14px/50px "Lato";
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 39px;
+  padding: 0 29px;
+  transition: all 0.2s ease;
 }
 
 .fa-long-arrow-right {
-    padding-left: 20px;
+  padding-left: 20px;
 }
 
 .form_button:hover {
-    border: 1px solid $pink_text;
-    background: #FFFFFF;
-    color:  $pink_text;
-    cursor: pointer;
+  border: 1px solid $pink_text;
+  background: #ffffff;
+  color: $pink_text;
+  cursor: pointer;
 }
 
-
-/*Блок LOYALTY HAS ITS PERKS*/ 
+/*Блок LOYALTY HAS ITS PERKS*/
 .loyalty {
-    max-width: 652px;
+  max-width: 652px;
 }
 
 .loyalty_heading {
-    font: 300 24px/29px 'Lato';
-    color: #000000;
-    text-transform: uppercase;
-    width: 100%;
+  font: 300 24px/29px "Lato";
+  color: #000000;
+  text-transform: uppercase;
+  width: 100%;
 }
 
 .loyalty_text {
-    font: 300 24px/29px 'Lato';
-    color: #000000;
-    margin-top: 22px;
-    margin-bottom: 21px;
-    width: 100%;
+  font: 300 24px/29px "Lato";
+  color: #000000;
+  margin-top: 22px;
+  margin-bottom: 21px;
+  width: 100%;
 }
 
 .loyalty_list {
-    font: 300 24px/29px 'Lato';
-    color: #000000;
-    list-style-type: none;
-    width: 100%;
+  font: 300 24px/29px "Lato";
+  color: #000000;
+  list-style-type: none;
+  width: 100%;
 }
 
 .loyalty_punkt {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .loyalty_punkt::before {
-    content: url(registration_image/check_mark.svg);
-    display: block;
-    margin-right: 23px;
-    float: left;
+  content: url(registration_image/check_mark.svg);
+  display: block;
+  margin-right: 23px;
+  float: left;
 }
-
-
 
 /*СТРАНИЦА КОРЗИНЫ*/
 
 .background_page_cart {
-    background: #E5E5E5;
-    padding-top: 96px;
-    padding-bottom: 128.5px;
+  background: #e5e5e5;
+  padding-top: 96px;
+  padding-bottom: 128.5px;
 }
 
 .cart_box {
-    display: flex;
+  display: flex;
 }
 
 .cart_product_box {
-    margin-right: 128px;
+  margin-right: 128px;
 }
 
 .cart_product {
-    width: 100%;
-    background: #FFFFFF;
-    filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
-    display: flex;
-    position: relative;
-    margin-bottom: 40px;
+  width: 100%;
+  background: #ffffff;
+  filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+  display: flex;
+  position: relative;
+  margin-bottom: 40px;
 }
 
 .fa-times {
-    position: absolute;
-    color: #575757;
-    top: 25px;
-    right: 22px;
+  position: absolute;
+  color: #575757;
+  top: 25px;
+  right: 22px;
 }
 
 .fa-times:hover {
-    color: $pink_text;
-    cursor: pointer;
+  color: $pink_text;
+  cursor: pointer;
 }
 
 .cart_link_to_product {
-    display: block;
+  display: block;
 }
 
 .cart_product_photo {
-    display: block;
-    min-height: 188px;
+  display: block;
+  min-height: 188px;
 }
 
 .cart_link_to_product:hover {
-    filter: brightness(90%);
-    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+  filter: brightness(90%);
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
 }
 
 .cart_product_text_box {
-    width: 262px;
-    margin-top: 22px;
-    margin-left: 31px;
+  width: 262px;
+  margin-top: 22px;
+  margin-left: 31px;
 }
 
 .product_text_heading {
-    font: 400 24px/29px 'Lato';
-    text-transform: uppercase;
-    margin-bottom: 42px;
+  font: 400 24px/29px "Lato";
+  text-transform: uppercase;
+  margin-bottom: 42px;
 }
 
 .cart_product_text {
-    font: 400 22px/26px 'Lato';
-    color: #575757;
-    padding-bottom: 6px;
+  font: 400 22px/26px "Lato";
+  color: #575757;
+  padding-bottom: 6px;
 }
-
 
 /*СТИЛИЗАЦИЯ ПОЛЯ ВВОДА КОЛИЧЕСТВА ТОВАРА В КОРЗИНЕ*/
 .cart_product_quantity {
-    width: 43px;
-    height: 24px;
-    font: 400 18px/22px 'Lato';
-    text-align: center;
-    color: #656565;
-    border: 1px solid #EAEAEA;
-    box-sizing: border-box;
-    margin-left: 24px;
+  width: 43px;
+  height: 24px;
+  font: 400 18px/22px "Lato";
+  text-align: center;
+  color: #656565;
+  border: 1px solid #eaeaea;
+  box-sizing: border-box;
+  margin-left: 24px;
 }
 
 /*СКРЫВАЕМ СТРЕЛКИ ВВЕРХ И ВНИЗ.*/
@@ -1465,12 +1434,12 @@ input:checked+div+input+div+input+div .carousel__arrow:before {
 
 /*ЭТО ДЛЯ МОЗИЛЛЫ*/
 .cart_product_quantity {
-    -moz-appearance: textfield;
+  -moz-appearance: textfield;
 }
 
 .cart_product_quantity:hover,
 .cart_product_quantity:focus {
-    -moz-appearance: number-input;
+  -moz-appearance: number-input;
 }
 
 /*ЭТО ДЛЯ ДРУГИХ БРАУЗЕРОВ*/
@@ -1480,1001 +1449,954 @@ input:checked+div+input+div+input+div .carousel__arrow:before {
 }
 
 .cart_product_link {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 72.5px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 72.5px;
 }
 
 .product_link {
-    display: block;
-    height: 50px;
-    font: 300 14px/50px Lato;
-    color: #000000;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    background: #FFFFFF;
-    border: 1px solid #A4A4A4;
-    padding: 0 40px;
-    box-sizing: border-box;
-    transition: all .2s ease;
+  display: block;
+  height: 50px;
+  font: 300 14px/50px Lato;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #ffffff;
+  border: 1px solid #a4a4a4;
+  padding: 0 40px;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
 }
 
 .product_link:hover {
-    color: $pink_text;
-    border: 1px solid $pink_text;
+  color: $pink_text;
+  border: 1px solid $pink_text;
 }
-
-
 
 /*БЛОК ФОРМЫ ДЛЯ ЗАПОЛНЕНИЯ В КОРЗИНЕ*/
 
 .shipping_adress {
-    width: 360px;
-    margin-top: 17px;
+  width: 360px;
+  margin-top: 17px;
 }
 
 .input_black_text {
-    color: #222222;
+  color: #222222;
 }
 
 #cart_textarea {
-    width: 100px;
-    height: 34px;
-    resize: none;
-    text-align: center;
-    font: 300 11px/13px 'Lato';
-    color: #4A4A4A;
-    border: 1px solid #A4A4A4;
-    margin-top: 24px;
-    padding-top: 9.5px;
-    padding-bottom: 11.5px;
-    box-sizing: border-box;
+  width: 100px;
+  height: 34px;
+  resize: none;
+  text-align: center;
+  font: 300 11px/13px "Lato";
+  color: #4a4a4a;
+  border: 1px solid #a4a4a4;
+  margin-top: 24px;
+  padding-top: 9.5px;
+  padding-bottom: 11.5px;
+  box-sizing: border-box;
 }
 
 .checkout_box {
-    margin-top: 57.5px;
-    padding: 39px 34px 42px 43px;
-    box-sizing: border-box;
-    background: #F5F3F3;
-    text-align: right;
+  margin-top: 57.5px;
+  padding: 39px 34px 42px 43px;
+  box-sizing: border-box;
+  background: #f5f3f3;
+  text-align: right;
 }
 
 .sub_total {
-    font: 400 11px/13px 'Lato';
-    color: #4A4A4A;
+  font: 400 11px/13px "Lato";
+  color: #4a4a4a;
 }
 
 .span_sub_total {
-    margin-left: 24px;
+  margin-left: 24px;
 }
 
 .grand_total {
-    font: 300 16px/19px 'Lato';
-    color: #222222;
-    margin: 12px 3px 21px auto;
+  font: 300 16px/19px "Lato";
+  color: #222222;
+  margin: 12px 3px 21px auto;
 }
 
 .span_grand_total {
-    font: 700 16px/19px 'Lato';
-    color: $pink_text;
-    margin-left: 22px;
+  font: 700 16px/19px "Lato";
+  color: $pink_text;
+  margin-left: 22px;
 }
 
 .checkout_line {
-    width: 275px;
-    margin-right: 8px;
-    margin-bottom: 17px;
-    border: 1px solid #E2E2E2;
+  width: 275px;
+  margin-right: 8px;
+  margin-bottom: 17px;
+  border: 1px solid #e2e2e2;
 }
 
 .checkout_link {
-    width: 273px;
-    height: 50px;
-    font: 300 16px/50px 'Lato';
-    text-align: center;
-    color: #FFFFFF;
-    text-transform: uppercase;
-    text-decoration: none;
-    border: 1px solid transparent;
-    background-color: $pink_text;
-    display: block;
-    margin-right: 9px;
-    transition: all .2s ease;
+  width: 273px;
+  height: 50px;
+  font: 300 16px/50px "Lato";
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid transparent;
+  background-color: $pink_text;
+  display: block;
+  margin-right: 9px;
+  transition: all 0.2s ease;
 }
 
 .checkout_link:hover {
-    color: $pink_text;
-    background-color: #FFFFFF;
-    border: 1px solid $pink_text;
-    cursor: pointer;
+  color: $pink_text;
+  background-color: #ffffff;
+  border: 1px solid $pink_text;
+  cursor: pointer;
 }
-
-
 
 /*НАЧАЛО РЕСПОНСИВА*/
 
-@media screen and (max-width: 1139px)  {
+@media screen and (max-width: 1139px) {
+  .container {
+    padding: 0 16px;
+  }
 
-    .container {
-        padding: 0 16px;
-    }
+  .logo {
+    padding-left: 16px;
+  }
 
-    .logo {
-        padding-left: 16px;
-    }
+  .header_cart {
+    padding-right: 16px;
+  }
 
-    .header_cart {
-        padding-right: 16px;
-    }
+  .menu_box {
+    left: -46px;
+  }
 
-    .menu_box {
-       left: -46px; 
-    } 
+  .menu_box::before {
+    left: 74px;
+  }
 
-    .menu_box::before {
-        left: 74px;
-    }
+  /*Блок мужик с брендом справа*/
+  .brand_box_text {
+    width: 283px;
+  }
 
+  .brand_box_h1 {
+    font: 900 44px/40px "Lato";
+    text-transform: uppercase;
+  }
 
-    /*Блок мужик с брендом справа*/
-    .brand_box_text {
-        width: 283px;
-    }
-    
-    .brand_box_h1 {
-        font: 900 44px/40px 'Lato';
-        text-transform: uppercase;
-    }
-    
-    .brand_box_h2 {
-        font: 700 30px/40px 'Lato';
-        font-variant: small-caps;
-    }
+  .brand_box_h2 {
+    font: 700 30px/40px "Lato";
+    font-variant: small-caps;
+  }
 
-    .chapters_card {
-        width: 31.5%;
-    }
+  .chapters_card {
+    width: 31.5%;
+  }
 
-    .chapters_accesories {
-        width: 100%;
-    }
+  .chapters_accesories {
+    width: 100%;
+  }
 
-    .accesories_text_box {
-        top: 36%;
-    }
+  .accesories_text_box {
+    top: 36%;
+  }
 
-    .card {
-        width: 31.5%;
-    }
+  .card {
+    width: 31.5%;
+  }
 
-    .add_box {
-        top: 32%;
-    }
+  .add_box {
+    top: 32%;
+  }
 
-    .advantages_box {
-        padding-top: 103px;
-        padding-bottom: 103px;
-    }
+  .advantages_box {
+    padding-top: 103px;
+    padding-bottom: 103px;
+  }
 
-    .advantages_card {
-        width: 31.5%;
-    }
+  .advantages_card {
+    width: 31.5%;
+  }
 
-    .feedback_box {
-        padding-top: 97px;
-        padding-bottom: 156px;
-    }
+  .feedback_box {
+    padding-top: 97px;
+    padding-bottom: 156px;
+  }
 
-    .copyright {
-        margin: 0 16px;
-    }
+  .copyright {
+    margin: 0 16px;
+  }
 
+  .filter_box_mini {
+    left: 16px;
+  }
 
-    .filter_box_mini {
-        left: 16px;
-    }
-
-
-    /*страница продукта*/
-    .product_info {
-        width: 100vw;
-        padding: 65px 0;
-        transform: none;
-        margin-bottom: 130px;
-    }
-
-
+  /*страница продукта*/
+  .product_info {
+    width: 100vw;
+    padding: 65px 0;
+    transform: none;
+    margin-bottom: 130px;
+  }
 }
 
+@media screen and (max-width: 1070px) {
+  .cart_product_box {
+    margin-right: 40px;
+  }
 
-
-@media screen and (max-width: 1070px)  {
-
-    .cart_product_box {
-        margin-right: 40px;
-    }
-
-    .search_field:hover #search, #search:focus, #search:active #search {
-        width: 500px;
-    }
+  .search_field:hover #search,
+  #search:focus,
+  #search:active #search {
+    width: 500px;
+  }
 }
 
+@media screen and (max-width: 980px) {
+  .cart_box {
+    flex-direction: column;
+  }
 
+  .shipping_adress {
+    margin-top: 64px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
 
-@media screen and (max-width: 980px)  {
+  .checkout_box {
+    margin-top: 0;
+    width: max-content;
+    align-self: center;
+  }
 
-    .cart_box {
-        flex-direction: column;
-    }
+  .cart_product_box {
+    margin-right: 2px;
+  }
 
-    .shipping_adress {
-        margin-top: 64px;
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-    }
-
-    .checkout_box {
-        margin-top: 0;
-        width: max-content;
-        align-self: center;
-    }
-
-    .cart_product_box {
-        margin-right: 2px;
-    }
-
-    .search_field:hover #search, #search:focus, #search:active #search {
-        width: 400px;
-    }
-
-
+  .search_field:hover #search,
+  #search:focus,
+  #search:active #search {
+    width: 400px;
+  }
 }
 
+@media screen and (max-width: 769px) {
+  /*Блок мужик с брендом справа*/
+  .brand_box {
+    min-height: 368px;
+  }
 
+  .brand_men {
+    width: 50%;
+  }
 
-@media screen  and (max-width: 769px) {
+  .brand_box_text {
+    width: 283px;
+  }
 
-    /*Блок мужик с брендом справа*/
-    .brand_box {
-        min-height: 368px;
-    }
-    
-    .brand_men {
-        width: 50%;
-    }
+  .brand_box_h1 {
+    font: 900 44px/40px "Lato";
+    text-transform: uppercase;
+  }
 
-    .brand_box_text {
-        width: 283px;
-    }
-    
-    .brand_box_h1 {
-        font: 900 44px/40px 'Lato';
-        text-transform: uppercase;
-    }
-    
-    .brand_box_h2 {
-        font: 700 30px/40px 'Lato';
-        font-variant: small-caps;
-    }
-    
-    .background_page_index {
-        padding-top: 20px;
-        padding-bottom: 65px;
-    }
+  .brand_box_h2 {
+    font: 700 30px/40px "Lato";
+    font-variant: small-caps;
+  }
 
+  .background_page_index {
+    padding-top: 20px;
+    padding-bottom: 65px;
+  }
 
-    .chapters_text_box {
-        top: 35%;
-    }
+  .chapters_text_box {
+    top: 35%;
+  }
 
-    .chapters_accesories {
-        margin-top: 20px;
-    }
+  .chapters_accesories {
+    margin-top: 20px;
+  }
 
-    .accesories_text_box {
-        top: 26.5%;
-    }
-    
-    .catalog_box {
-        margin-top: 155px;
-    }
+  .accesories_text_box {
+    top: 26.5%;
+  }
 
-    .catalog_head {
-        width: 100%;
-        text-align: center;
-    }
+  .catalog_box {
+    margin-top: 155px;
+  }
 
-    .catalog_text {
-        margin-top: 3px;
-        width: 100%;
-        text-align: center;
-    }
+  .catalog_head {
+    width: 100%;
+    text-align: center;
+  }
 
-    .card_box {
-        margin-top: 74px;
-    }
-    
-    .card {
-        width: 49%;
-        margin-bottom: 17px;
-    }
+  .catalog_text {
+    margin-top: 3px;
+    width: 100%;
+    text-align: center;
+  }
 
-    .catalog_button {
-        margin-top: 16px;
-    }
+  .card_box {
+    margin-top: 74px;
+  }
 
+  .card {
+    width: 49%;
+    margin-bottom: 17px;
+  }
 
-    .advantages_box {
-        padding-top: 48px;
-        padding-bottom: 16px;
-        flex-direction: column;
-        align-items: center;
-    }
+  .catalog_button {
+    margin-top: 16px;
+  }
 
-    .advantages_card {
-        margin-bottom: 48px;
-        width: 360px;
-    }
+  .advantages_box {
+    padding-top: 48px;
+    padding-bottom: 16px;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .feedback_box {
-        flex-direction: column;
-        align-items: center;
-        padding-top: 54px;
-        padding-bottom: 140px;
-    }
+  .advantages_card {
+    margin-bottom: 48px;
+    width: 360px;
+  }
 
-    .form_email {
-        margin-top: 27px;
-    }
+  .feedback_box {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 54px;
+    padding-bottom: 140px;
+  }
 
-    .background_page_catalog {
-        padding-top: 24px;
-        padding-bottom: 64px;
-    }
+  .form_email {
+    margin-top: 27px;
+  }
 
-    .filter_check {
-        margin-left: 0;
-    }
+  .background_page_catalog {
+    padding-top: 24px;
+    padding-bottom: 64px;
+  }
 
-    .filter:checked + .filter_check {
-        margin-left: 16px;
-    }
+  .filter_check {
+    margin-left: 0;
+  }
 
-    .filter_block {
-        justify-content: flex-end;
-    }
+  .filter:checked + .filter_check {
+    margin-left: 16px;
+  }
 
-    .control_padding {
-        padding-right: 0;
-    }
+  .filter_block {
+    justify-content: flex-end;
+  }
 
-    .choise_box_padding {
-        padding-right: 0;
-    }
+  .control_padding {
+    padding-right: 0;
+  }
 
-    .card_box_catalog {
-        margin-top: 40px;
-    }
+  .choise_box_padding {
+    padding-right: 0;
+  }
 
-    .card:nth-child(9) {
-        display: none;
-    }
+  .card_box_catalog {
+    margin-top: 40px;
+  }
 
-    .pagination_box {
-        margin-top: 23px;
-    }
-    
-    .background_page_cart {
-        padding-top: 59px;
-    }
+  .card:nth-child(9) {
+    display: none;
+  }
 
-    .cart_box {
-        flex-direction: column;
-    }
+  .pagination_box {
+    margin-top: 23px;
+  }
 
-    .cart_product_photo {
-        width: 40vw;
-    }
+  .background_page_cart {
+    padding-top: 59px;
+  }
 
-    .cart_product_link {
-        margin-top: 62.5px;
-        justify-content: space-evenly;
-    }
+  .cart_box {
+    flex-direction: column;
+  }
 
-    .product_link {
-        padding: 0;
-        width: 32%;
-    }
+  .cart_product_photo {
+    width: 40vw;
+  }
 
-    .fieldset {
-        width: 48%;
-    }
+  .cart_product_link {
+    margin-top: 62.5px;
+    justify-content: space-evenly;
+  }
 
-    .checkout_box {
-        width: 48%;
-    }
+  .product_link {
+    padding: 0;
+    width: 32%;
+  }
 
-    .checkout_line {
-        width: 100%;
-    }
+  .fieldset {
+    width: 48%;
+  }
 
-    .checkout_link {
-        width: 100%;
-    }
+  .checkout_box {
+    width: 48%;
+  }
 
-    .background_page_registration {
-        padding-top: 40px;
-    }
+  .checkout_line {
+    width: 100%;
+  }
 
-    .label_other {
-        display: inline-flex;
-    }
+  .checkout_link {
+    width: 100%;
+  }
 
-    .loyalty_heading {
-        font: 300 16px/19px 'Lato';
-    }
-    
-    .loyalty_text {
-        font: 300 16px/19px 'Lato';
-        margin-top: 32px;
-    }
-    
-    .loyalty_list {
-        font: 300 16px/19px 'Lato';
-    }
+  .background_page_registration {
+    padding-top: 40px;
+  }
 
-    /*страница ПРОДУКТ*/
+  .label_other {
+    display: inline-flex;
+  }
 
-    .carousel {
-        height: 624px;
-    }
+  .loyalty_heading {
+    font: 300 16px/19px "Lato";
+  }
 
-    .card_page_product:last-of-type {
-        display: none;
-    }
+  .loyalty_text {
+    font: 300 16px/19px "Lato";
+    margin-top: 32px;
+  }
 
-    .search_field:hover #search, #search:focus, #search:active #search {
-        width: 250px;
-    }
+  .loyalty_list {
+    font: 300 16px/19px "Lato";
+  }
 
+  /*страница ПРОДУКТ*/
+
+  .carousel {
+    height: 624px;
+  }
+
+  .card_page_product:last-of-type {
+    display: none;
+  }
+
+  .search_field:hover #search,
+  #search:focus,
+  #search:active #search {
+    width: 250px;
+  }
 }
-
-
-
-
 
 @media screen and (max-width: 650px) {
+  .brand_men {
+    display: none;
+  }
 
-    .brand_men {
-        display: none;
-    }
+  .brand_box_head {
+    width: 100%;
+  }
 
-      .brand_box_head {
-        width: 100%;
-    }
+  .chapters_box {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .chapters_box {
-        display: flex;
-        flex-direction: column;
-    }
+  .chapters_card {
+    width: 100%;
+  }
 
-    .chapters_card {
-        width: 100%;
-    }
+  .chapters_text_box {
+    top: 40%;
+  }
 
-    .chapters_text_box {
-        top: 40%;
-    }
+  .accesories_img {
+    min-height: 111px;
+  }
 
-    .accesories_img {
-        min-height: 111px;
-    }
+  .accesories_text_box {
+    top: 27.5%;
+  }
 
-    .accesories_text_box {
-        top: 27.5%;
-    }
+  .add_box {
+    top: 20%;
+  }
 
-    .add_box {
-        top: 20%;
-    }
+  .chapters_card {
+    margin-bottom: 32px;
+  }
 
+  .chapters_card:last-child {
+    margin-bottom: 0;
+  }
 
-    .chapters_card {
-        margin-bottom: 32px;
-    }
+  .chapters_accesories {
+    margin-top: 32px;
+  }
 
-    .chapters_card:last-child {
-        margin-bottom: 0;
-    }
+  .shipping_adress {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 48px;
+  }
 
-    .chapters_accesories {
-        margin-top: 32px;
-    }
+  .fieldset {
+    width: 100%;
+  }
 
-    .shipping_adress {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 48px;
-    }
+  .checkout_box {
+    margin-top: 48.5px;
+    width: 100%;
+  }
 
-    .fieldset {
-        width: 100%;
-    }
+  .product_big_line {
+    width: 47%;
+  }
 
-    .checkout_box {
-        margin-top: 48.5px;
-        width: 100%;
-    }
+  .search_field {
+    position: relative;
+  }
 
-    .product_big_line {
-        width: 47%;
-    }
+  .button_search_field {
+    background: rgba(0, 0, 0, 0);
+    padding: 11px 18px 12px 25px;
+    position: absolute;
+    z-index: 1;
+    top: -24px;
+  }
 
-    .search_field {
-        position: relative;
-    }
+  #search {
+    font: 400 11px/50px "Lato";
+    position: absolute;
+    left: 0;
+    top: -24px;
+    transition-duration: 0s;
+  }
 
-    .button_search_field {
-        background: rgba(0, 0, 0, 0);
-        padding: 11px 18px 12px 25px;
-        position: absolute;
-        z-index: 1;
-        top: -24px;
-    }
-
-    #search {
-        font: 400 11px/50px 'Lato';
-        position: absolute;
-        left: 0;
-        top: -24px;
-        transition-duration: 0s;
-    }
-
-    .search_field:hover #search, #search:focus, #search:active #search {
-        width: 220px;
-    }
-    
+  .search_field:hover #search,
+  #search:focus,
+  #search:active #search {
+    width: 220px;
+  }
 }
-
-
-
 
 @media screen and (max-width: 540px) {
-    .cart_product_text_box {
-        max-width: 144px;
-        margin-top: 13px;
-        margin-left: 17px;
-    }
+  .cart_product_text_box {
+    max-width: 144px;
+    margin-top: 13px;
+    margin-left: 17px;
+  }
 
-    .product_text_heading {
-        font: 400 16px/19px 'Lato';
-        margin-bottom: 26px;
-    }
+  .product_text_heading {
+    font: 400 16px/19px "Lato";
+    margin-bottom: 26px;
+  }
 
-    .cart_product_text {
-        font: 400 14px/17px 'Lato';
-        padding-bottom: 3px;
-    }
+  .cart_product_text {
+    font: 400 14px/17px "Lato";
+    padding-bottom: 3px;
+  }
 
-    .cart_product_quantity {
-        width: 24px;
-        height: 17px;
-        font: 400 14px/17px 'Lato';
-        margin-left: 15px;
-    }
+  .cart_product_quantity {
+    width: 24px;
+    height: 17px;
+    font: 400 14px/17px "Lato";
+    margin-left: 15px;
+  }
 
-    .fa-times {
-        top: 17px;
-        right: 12px;
-    }
+  .fa-times {
+    top: 17px;
+    right: 12px;
+  }
 
-    .product_link {
-        width: 44%;
-    }
+  .product_link {
+    width: 44%;
+  }
 
-    .registration_box {
-        flex-direction: column;
-    }
+  .registration_box {
+    flex-direction: column;
+  }
 
-    .registration_form {
-        margin-right: 0;
-    }
+  .registration_form {
+    margin-right: 0;
+  }
 
-    .fieldset_registration {
-        width: 100%;
-    }
+  .fieldset_registration {
+    width: 100%;
+  }
 
-    .loyalty {
-       margin-top: 40px; 
-    }
-
-
-    
+  .loyalty {
+    margin-top: 40px;
+  }
 }
-
 
 @media screen and (max-width: 440px) {
+  .card {
+    width: 100%;
+  }
 
-    .card {
-        width: 100%;
-    }
+  .add_box {
+    top: 32%;
+  }
 
-    .add_box {
-        top: 32%;
-    }
+  .advantages_card {
+    width: 100%;
+  }
 
-    .advantages_card {
-        width: 100%;
-    }
+  .comment {
+    width: 100%;
+    text-align: center;
+  }
 
-    .comment {
-        width: 100%;
-        text-align: center;
-    }
+  .subscribe {
+    width: 100%;
+    text-align: center;
+  }
 
-    .subscribe {
-        width: 100%;
-        text-align: center;
-    }
+  .input_email {
+    width: 100%;
+  }
 
-    .input_email {
-        width: 100%;
-    }
+  .copyright {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 143px;
+    padding: 43px 0 9px;
+    box-sizing: border-box;
+  }
 
-    .copyright {
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: space-between;
-        min-height: 143px;
-        padding: 43px 0 9px;
-        box-sizing: border-box;
-    }
+  .breadcrumb_nav {
+    padding-top: 24px;
+    padding-bottom: 46px;
+    box-sizing: border-box;
+    flex-direction: column;
+  }
 
-    .breadcrumb_nav {
-        padding-top: 24px;
-        padding-bottom: 46px;
-        box-sizing: border-box;
-        flex-direction: column;
-    }
+  .breadcrumb_heading {
+    width: 100%;
+    text-align: center;
+  }
 
-    .breadcrumb_heading {
-        width: 100%;
-        text-align: center;
-    }
+  .breadcrumb {
+    width: 100%;
+  }
 
-    .breadcrumb {
-        width: 100%;
-    }
+  .breadcrumb_padding {
+    padding-top: 0;
+    padding-bottom: 0;
+    justify-content: center;
+  }
 
-    .breadcrumb_padding {
-        padding-top: 0;
-        padding-bottom: 0;
-        justify-content: center;
-    }
+  /*окно с фильтром каталога слева */
 
+  .filter_check {
+    display: none;
+  }
 
-    /*окно с фильтром каталога слева */
-    
-    .filter_check {
-        display: none;
-    }
+  .filter_check_hidden {
+    display: inline-block;
+    color: #000000;
+    padding: 5px 14px 5px 0;
+    position: absolute;
+    top: -4px;
+    z-index: 2;
+    cursor: pointer;
+  }
 
-    .filter_check_hidden {
-        display: inline-block;
-        color: #000000;
-        padding: 5px 14px 5px 0;
-        position: absolute;
-        top: -4px;
-        z-index: 2;
-        cursor: pointer;
-    }
+  .filter:checked ~ .filter_check_hidden {
+    margin-left: 16px;
+    color: $pink_text;
+  }
 
-    .filter:checked ~ .filter_check_hidden {
-        margin-left: 16px;
-        color: $pink_text;
-    }
+  .filter_box_mini {
+    width: 80vw;
+  }
 
-    .filter_box_mini {
-        width: 80vw;
-    }
+  .filter_link {
+    font: 400 12px/14px "Lato";
+  }
 
-    .filter_link {
-        font: 400 12px/14px 'Lato';
-    }
+  .filter_heading {
+    font: 400 12px/14px "Lato";
+  }
 
-    .filter_heading {
-        font: 400 12px/14px 'Lato';
-    }
+  /*блок фильтров посередине каталога*/
+  .control_item {
+    font: 400 12px/14px "Lato";
+    padding: 10px 12px;
+  }
 
+  .control_padding {
+    padding-right: 0;
+  }
 
-    
-    /*блок фильтров посередине каталога*/
-    .control_item {
-        font: 400 12px/14px 'Lato';
-        padding: 10px 12px;
-    }
+  .variant_check + .item_check {
+    font: 400 12px/14px "Lato";
+  }
 
-    .control_padding {
-        padding-right: 0;
-    }
+  .choise_box_padding {
+    padding-right: 0;
+  }
 
-    .variant_check + .item_check {
-        font: 400 12px/14px 'Lato';
-    }
+  .product_box_bottom {
+    margin-top: 49px;
+    margin-bottom: 65px;
+  }
 
-    .choise_box_padding {
-        padding-right: 0;
-    }
+  .product_box_bottom {
+    width: 100%;
+  }
 
-    .product_box_bottom {
-        margin-top: 49px;
-        margin-bottom: 65px;
-    }
-
-    .product_box_bottom {
-        width: 100%;
-    }
-
-    .select_item, .control_i_product {
-        font: 400 10px/12px 'Lato';
-        flex-grow: 1;
-    }
-
-    
+  .select_item,
+  .control_i_product {
+    font: 400 10px/12px "Lato";
+    flex-grow: 1;
+  }
 }
-
-
-
 
 @media screen and (max-width: 376px) {
+  .container {
+    padding: 0 8px;
+  }
 
-    .container {
-        padding: 0 8px;
-    }
+  .logo {
+    padding-left: 8px;
+  }
 
-    .logo {
-        padding-left: 8px;
-    }
+  .header_right_link {
+    padding-right: 8px;
+  }
 
-    .header_right_link {
-        padding-right: 8px;
-    }
+  .header_home {
+    display: none;
+  }
 
-    .header_home {
-        display: none;
-    }
+  .header_cart {
+    display: none;
+  }
 
-    .header_cart {
-        display: none;
-    }
+  .menu_box {
+    left: -125px;
+    width: 180px;
+  }
 
-    .menu_box {
-        left: -125px;
-        width: 180px;
-    }
-    
-    .menu_box::before {
-        left: 150px;
-    }
+  .menu_box::before {
+    left: 150px;
+  }
 
+  /*Блок мужик с брендом справа*/
+  .brand_box {
+    height: 363px;
+  }
 
-    /*Блок мужик с брендом справа*/
-    .brand_box {
-        height: 363px;
-    }
+  .vertical_line {
+    height: 61px;
+  }
 
-    .vertical_line {
-        height: 61px;
-    }
+  .brand_box_text {
+    width: 236px;
+  }
 
-    .brand_box_text {
-        width: 236px;
-    }
-    
-    .brand_box_h1 {
-        font: 900 38px/11px 'Lato';
-        text-transform: uppercase;
-    }
-    
-    .brand_box_h2 {
-        font: 700 25px/50px 'Lato';
-        font-variant: small-caps;
-    }
+  .brand_box_h1 {
+    font: 900 38px/11px "Lato";
+    text-transform: uppercase;
+  }
 
+  .brand_box_h2 {
+    font: 700 25px/50px "Lato";
+    font-variant: small-caps;
+  }
 
-    .background_page_index {
-        padding-top: 64px;
-        padding-bottom: 96px;
-    }
+  .background_page_index {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
 
-    .catalog_box {
-        margin-top: 64px;
-    }
+  .catalog_box {
+    margin-top: 64px;
+  }
 
-    .catalog_head {
-        width: 100%;
-        text-align: center;
-    }
+  .catalog_head {
+    width: 100%;
+    text-align: center;
+  }
 
-    .catalog_text {
-        margin-top: 3px;
-        width: 100%;
-        text-align: center;
-    }
+  .catalog_text {
+    margin-top: 3px;
+    width: 100%;
+    text-align: center;
+  }
 
-    .card_box {
-        margin-top: 65px;
-    }
+  .card_box {
+    margin-top: 65px;
+  }
 
-    .catalog_button {
-        margin-top: 24px;
-    }
+  .catalog_button {
+    margin-top: 24px;
+  }
 
-    .advantages_box {
-        padding: 48px 8px 33px;
-    }
+  .advantages_box {
+    padding: 48px 8px 33px;
+  }
 
-    .feedback_box {
-        padding: 54px 8px 110px;
-    }
+  .feedback_box {
+    padding: 54px 8px 110px;
+  }
 
-    .copyright {
-        padding: 43px 8px 24px;
-    }
+  .copyright {
+    padding: 43px 8px 24px;
+  }
 
-    .form_email {
-        margin-top: 22px;
-    }
+  .form_email {
+    margin-top: 22px;
+  }
 
-    .copyright {
-        margin: 0;
-    }
+  .copyright {
+    margin: 0;
+  }
 
-    .breadcrumb_nav {
-        padding-top: 24px;
-        padding-bottom: 46px;
-    }
+  .breadcrumb_nav {
+    padding-top: 24px;
+    padding-bottom: 46px;
+  }
 
-    .breadcrumb_padding {
-        padding-top: 0;
-        padding-bottom: 0;
-    }
+  .breadcrumb_padding {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 
-    .filter_box_mini {
-        left: 8px;
-    }
+  .filter_box_mini {
+    left: 8px;
+  }
 
-    .background_page_cart {
-        padding-top: 39px;
-        padding-bottom: 96px;
-    }
+  .background_page_cart {
+    padding-top: 39px;
+    padding-bottom: 96px;
+  }
 
-    .cart_product_box {
-        margin-right: 0;
-    }
+  .cart_product_box {
+    margin-right: 0;
+  }
 
-    .cart_product_link {
-        margin-top: 30px;
+  .cart_product_link {
+    margin-top: 30px;
+  }
 
-    }
+  .product_link {
+    font: 400 12px/32px "Lato";
+    height: 32px;
+    width: 48%;
+    padding: 0;
+    text-transform: none;
+    color: #575757;
+  }
 
-    .product_link {
-        font: 400 12px/32px 'Lato';
-        height: 32px;
-        width: 48%;
-        padding: 0;
-        text-transform: none;
-        color: #575757;
-    }
+  .background_carousel {
+    padding: 0;
+  }
 
-    .background_carousel {
-        padding: 0;
-    }
+  .background_page_product {
+    padding-bottom: 47px;
+  }
 
-    .background_page_product {
-        padding-bottom: 47px;
-    }
+  .product_info {
+    padding: 65px 0;
+    margin-bottom: 0;
+  }
 
-    .product_info {
-        padding: 65px 0;
-        margin-bottom: 0;
-    }
+  .product_description {
+    font: 300 14px/20px "Lato";
+    margin-top: 32px;
+  }
 
-    .product_description {
-        font: 300 14px/20px 'Lato';
-        margin-top: 32px;
-    }
-
-    .product_big_line {
-        margin-top: 32px;
-    }
-
-}   
-
-
-
-
-@media screen and (max-width: 280px) {
-    .vertical_line {
-        height: 60px;
-    }
-
-    .brand_box_h1 {
-        font: 900 28px/9px 'Lato';
-        text-transform: uppercase;
-    }
-    
-    .brand_box_h2 {
-        font: 700 20px/50px 'Lato';
-        font-variant: small-caps;
-    }
-
-    .catalog_button {
-        padding: 14px;
-        text-align: center;
-    }
-
-    .product_box_bottom {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .select_item {
-        margin-bottom: 15px;
-    }
-
-    .form_radiobutton {
-        flex-direction: column;
-    }
-
-    .add_box {
-        top: 20%;
-    }
-
-    .search_field:hover #search, #search:focus, #search:active #search {
-        width: 160px;
-    }
-
-
+  .product_big_line {
+    margin-top: 32px;
+  }
 }
 
+@media screen and (max-width: 280px) {
+  .vertical_line {
+    height: 60px;
+  }
+
+  .brand_box_h1 {
+    font: 900 28px/9px "Lato";
+    text-transform: uppercase;
+  }
+
+  .brand_box_h2 {
+    font: 700 20px/50px "Lato";
+    font-variant: small-caps;
+  }
+
+  .catalog_button {
+    padding: 14px;
+    text-align: center;
+  }
+
+  .product_box_bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .select_item {
+    margin-bottom: 15px;
+  }
+
+  .form_radiobutton {
+    flex-direction: column;
+  }
+
+  .add_box {
+    top: 20%;
+  }
+
+  .search_field:hover #search,
+  #search:focus,
+  #search:active #search {
+    width: 160px;
+  }
+}
 
 @media screen and (max-width: 240px) {
-    .brand_box_head {
-        align-items: center;
-    }
+  .brand_box_head {
+    align-items: center;
+  }
 
-    .vertical_line {
-        height: 50px;
-    }
+  .vertical_line {
+    height: 50px;
+  }
 
-    .brand_box_h1 {
-        font: 900 18px/34px 'Lato';
-        text-transform: uppercase;
-    }
-    
-    .brand_box_h2 {
-        font: 700 10px/12px 'Lato';
-        font-variant: small-caps;
-    }
+  .brand_box_h1 {
+    font: 900 18px/34px "Lato";
+    text-transform: uppercase;
+  }
 
-    .product_add {
-        width: 96vw;
-        justify-content: normal;
-    }
+  .brand_box_h2 {
+    font: 700 10px/12px "Lato";
+    font-variant: small-caps;
+  }
 
-    .product_add_text {
-        padding: 0;
-    }
-    
-    .add_box {
-        top: 15%;
-    }
+  .product_add {
+    width: 96vw;
+    justify-content: normal;
+  }
 
-    .add {
-        padding: 5px;
-        width: 70vw;
-    }
+  .product_add_text {
+    padding: 0;
+  }
+
+  .add_box {
+    top: 15%;
+  }
+
+  .add {
+    padding: 5px;
+    width: 70vw;
+  }
 }

@@ -1,181 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cart</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="icon" href="image/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
 
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
 
-        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
     </style>
+  </head>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-</head>
-
-<body>
+  <body>
     <header class="header">
-        <div class="header_box container">
-            <div class="header_left">
-                <a href="index.html" class="logo"><img src="image/logo.svg" alt="logo"></a>
-                <form action="#" class="search_field" id="header_search">
-                    <button class="button_search_field" type="button" form="header_search"><span
-                            class="fa fa-search fa-2x" aria-hidden="true"></span></button>
-                    <input type="search" id="search" placeholder="Enter the product name..." autocomplete="off" />
-                </form>
-            </div>
-
-            <div class="header_right">
-                <nav class="menu">
-                    <a class="header_right_link" href="#"><img src="image/menu.svg" alt="menu"></a>
-                    <div class="menu_box">
-                        <h2 class="menu_box_heading">MENU</h2>
-                        <div class="menu_box_item">
-                            <h3 class="item_heading">MAN</h3>
-                            <a class="item_link" href="#">Accessories</a>
-                            <a class="item_link" href="#">Bags</a>
-                            <a class="item_link" href="#">Denim</a>
-                            <a class="item_link" href="#">T-Shirts</a>
-                        </div>
-                        <div class="menu_box_item">
-                            <h3 class="item_heading">WOMAN</h3>
-                            <a class="item_link" href="#">Accessories</a>
-                            <a class="item_link" href="#">Jackets & Coats</a>
-                            <a class="item_link" href="#">Polos</a>
-                            <a class="item_link" href="#">T-Shirts</a>
-                            <a class="item_link" href="#">Shirts</a>
-                        </div>
-                        <div class="menu_box_item">
-                            <h3 class="item_heading">KIDS</h3>
-                            <a class="item_link" href="#">Accessories</a>
-                            <a class="item_link" href="#">Bags</a>
-                            <a class="item_link" href="#">Denim</a>
-                            <a class="item_link" href="#">T-Shirts</a>
-                            <a class="item_link" href="#">T-Shirts</a>
-                            <a class="item_link" href="#">Bags</a>
-                        </div>
-                    </div>
-                </nav>
-                <a class="header_right_link header_home" href="registration.html"><img src="image/personal_account.svg"
-                        alt="account"></a>
-                <a class="header_cart" href="cart.html"><img src="image/basket.svg" alt="basket"></a>
-            </div>
+      <div class="header_box container">
+        <div class="header_left">
+          <a href="index.html" class="logo"
+            ><img src="image/logo.svg" alt="logo"
+          /></a>
+          <form action="#" class="search_field" id="header_search">
+            <button
+              class="button_search_field"
+              type="button"
+              form="header_search"
+            >
+              <span class="fa fa-search fa-2x" aria-hidden="true"></span>
+            </button>
+            <input
+              type="search"
+              id="search"
+              placeholder="Enter the product name..."
+              autocomplete="off"
+            />
+          </form>
         </div>
+
+        <div class="header_right">
+          <nav class="menu">
+            <a class="header_right_link" href="#"
+              ><img src="image/menu.svg" alt="menu"
+            /></a>
+            <div class="menu_box">
+              <h2 class="menu_box_heading">MENU</h2>
+              <div class="menu_box_item">
+                <h3 class="item_heading">MAN</h3>
+                <a class="item_link" href="#">Accessories</a>
+                <a class="item_link" href="#">Bags</a>
+                <a class="item_link" href="#">Denim</a>
+                <a class="item_link" href="#">T-Shirts</a>
+              </div>
+              <div class="menu_box_item">
+                <h3 class="item_heading">WOMAN</h3>
+                <a class="item_link" href="#">Accessories</a>
+                <a class="item_link" href="#">Jackets & Coats</a>
+                <a class="item_link" href="#">Polos</a>
+                <a class="item_link" href="#">T-Shirts</a>
+                <a class="item_link" href="#">Shirts</a>
+              </div>
+              <div class="menu_box_item">
+                <h3 class="item_heading">KIDS</h3>
+                <a class="item_link" href="#">Accessories</a>
+                <a class="item_link" href="#">Bags</a>
+                <a class="item_link" href="#">Denim</a>
+                <a class="item_link" href="#">T-Shirts</a>
+                <a class="item_link" href="#">T-Shirts</a>
+                <a class="item_link" href="#">Bags</a>
+              </div>
+            </div>
+          </nav>
+          <a class="header_right_link header_home" href="registration.html"
+            ><img src="image/personal_account.svg" alt="account"
+          /></a>
+          <a class="header_cart" href="cart.html"
+            ><img src="image/basket.svg" alt="basket"
+          /></a>
+        </div>
+      </div>
     </header>
 
     <div class="breadcrumb_background">
-        <div class="breadcrumb_nav breadcrumb_padding container">
-            <h2 class="breadcrumb_heading">SHOPPING CART</h2>
-        </div>
+      <div class="breadcrumb_nav breadcrumb_padding container">
+        <h2 class="breadcrumb_heading">SHOPPING CART</h2>
+      </div>
     </div>
 
     <div class="background_page_cart">
-        <div class="cart_box container">
-            <section class="cart_product_box">
-                <figure class="cart_product">
-                    <i class="fa fa-times" aria-hidden="true" style="font-size: 1.5em;"></i>
-                    <a href="product.html" class="cart_link_to_product"><img class="cart_product_photo"
-                            src="cart_image/cart_img1.png" alt="photo">
-                    </a>
-                    <figcaption class="cart_product_text_box">
-                        <h2 class="product_text_heading">MANGO PEOPLE T-SHIRT</h2>
-                        <p class="cart_product_text">Price: <span class="pink_text">$300</span></p>
-                        <p class="cart_product_text">Color: Red</p>
-                        <p class="cart_product_text">Size: XL </p>
-                        <p class="cart_product_text">Quantity: <input type="number" step="1" min="1" max="100"
-                                pattern="[1-100]" name="quantity" value="1" title="Введите количество"
-                                class="cart_product_quantity"></p>
-                    </figcaption>
-                </figure>
+      <div class="cart_box container">
+        <section class="cart_product_box">
+          <figure class="cart_product">
+            <i
+              class="fa fa-times"
+              aria-hidden="true"
+              style="font-size: 1.5em"
+            ></i>
+            <a href="product.html" class="cart_link_to_product"
+              ><img
+                class="cart_product_photo"
+                src="cart_image/cart_img1.png"
+                alt="photo"
+              />
+            </a>
+            <figcaption class="cart_product_text_box">
+              <h2 class="product_text_heading">MANGO PEOPLE T-SHIRT</h2>
+              <p class="cart_product_text">
+                Price: <span class="pink_text">$300</span>
+              </p>
+              <p class="cart_product_text">Color: Red</p>
+              <p class="cart_product_text">Size: XL</p>
+              <p class="cart_product_text">
+                Quantity:
+                <input
+                  type="number"
+                  step="1"
+                  min="1"
+                  max="100"
+                  pattern="[1-100]"
+                  name="quantity"
+                  value="1"
+                  title="Введите количество"
+                  class="cart_product_quantity"
+                />
+              </p>
+            </figcaption>
+          </figure>
 
-                <figure class="cart_product">
-                    <i class="fa fa-times" aria-hidden="true" style="font-size: 1.5em;"></i>
-                    <a href="product.html" class="cart_link_to_product"><img class="cart_product_photo"
-                            src="cart_image/cart_img2.png" alt="photo"></a>
-                    <figcaption class="cart_product_text_box">
-                        <h2 class="product_text_heading">MANGO PEOPLE T-SHIRT</h2>
-                        <p class="cart_product_text">Price: <span class="pink_text">$300</span></p>
-                        <p class="cart_product_text">Color: Red</p>
-                        <p class="cart_product_text">Size: XL </p>
-                        <p class="cart_product_text">Quantity: <input type="number" step="1" min="1" max="100"
-                                pattern="[1-100]" name="quantity" value="1" title="Введите количество"
-                                class="cart_product_quantity"></p>
-                    </figcaption>
-                </figure>
+          <figure class="cart_product">
+            <i
+              class="fa fa-times"
+              aria-hidden="true"
+              style="font-size: 1.5em"
+            ></i>
+            <a href="product.html" class="cart_link_to_product"
+              ><img
+                class="cart_product_photo"
+                src="cart_image/cart_img2.png"
+                alt="photo"
+            /></a>
+            <figcaption class="cart_product_text_box">
+              <h2 class="product_text_heading">MANGO PEOPLE T-SHIRT</h2>
+              <p class="cart_product_text">
+                Price: <span class="pink_text">$300</span>
+              </p>
+              <p class="cart_product_text">Color: Red</p>
+              <p class="cart_product_text">Size: XL</p>
+              <p class="cart_product_text">
+                Quantity:
+                <input
+                  type="number"
+                  step="1"
+                  min="1"
+                  max="100"
+                  pattern="[1-100]"
+                  name="quantity"
+                  value="1"
+                  title="Введите количество"
+                  class="cart_product_quantity"
+                />
+              </p>
+            </figcaption>
+          </figure>
 
-                <div class="cart_product_link">
-                    <a href="#" class="product_link">Clear shopping cart</a>
-                    <a href="catalog.html" class="product_link">Continue shopping</a>
-                </div>
-            </section>
+          <div class="cart_product_link">
+            <a href="#" class="product_link">Clear shopping cart</a>
+            <a href="catalog.html" class="product_link">Continue shopping</a>
+          </div>
+        </section>
 
-            <form action="#" class="shipping_adress" id="cart_form">
-                <fieldset class="fieldset">
-                    <legend class="legend">SHIPPING ADRESS</legend>
-                    <input type="text" name="country" class="input_field" placeholder="Bangladesh">
-                    <input type="text" name="state" class="input_field input_black_text" placeholder="State">
-                    <input type="text" name="postcode" class="input_field input_black_text"
-                        placeholder="Postcode / Zip">
-                    <textarea name="cart_quote" id="cart_textarea" maxlength="140" form="cart_form"
-                        placeholder="GET A QUOTE"></textarea>
-                </fieldset>
+        <form action="#" class="shipping_adress" id="cart_form">
+          <fieldset class="fieldset">
+            <legend class="legend">SHIPPING ADRESS</legend>
+            <input
+              type="text"
+              name="country"
+              class="input_field"
+              placeholder="Bangladesh"
+            />
+            <input
+              type="text"
+              name="state"
+              class="input_field input_black_text"
+              placeholder="State"
+            />
+            <input
+              type="text"
+              name="postcode"
+              class="input_field input_black_text"
+              placeholder="Postcode / Zip"
+            />
+            <textarea
+              name="cart_quote"
+              id="cart_textarea"
+              maxlength="140"
+              form="cart_form"
+              placeholder="GET A QUOTE"
+            ></textarea>
+          </fieldset>
 
-
-                <div class="checkout_box">
-                    <p class="sub_total">SUB TOTAL <span class="span_sub_total">$900</span></p>
-                    <h3 class="grand_total">GRAND TOTAL <span class="span_grand_total">$900</span></h3>
-                    <hr class="checkout_line">
-                    <button class="checkout_link" name="checkout" form="cart_form">PROCEED TO
-                        CHECKOUT</button>
-                </div>
-            </form>
-        </div>
+          <div class="checkout_box">
+            <p class="sub_total">
+              SUB TOTAL <span class="span_sub_total">$900</span>
+            </p>
+            <h3 class="grand_total">
+              GRAND TOTAL <span class="span_grand_total">$900</span>
+            </h3>
+            <hr class="checkout_line" />
+            <button class="checkout_link" name="checkout" form="cart_form">
+              PROCEED TO CHECKOUT
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
 
     <footer class="footer">
-        <div class="background_footer">
-            <section class="feedback">
-                <div class="feedback_box container">
-                    <figure class="comment">
-                        <img src="image/Intersect.png" alt="photo">
-                        <figcaption class="comment_text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
-                            pulvinar purus condimentum“</figcaption>
-                    </figure>
-                    <div class="subscribe">
-                        <div class="subscribe_text">
-                            <h2 class="subscribe_head">subscribe</h2>
-                            <p class="subscribe_text_p">FOR OUR NEWLETTER AND PROMOTION</p>
-                        </div>
-                        <form action="#" class="form_email" id="subscribe_email">
-                            <input class="input_email" type="email" placeholder="Enter Your Email">
-                            <button class="button_email" type="submit" form="subscribe_email">Subscribe</button>
-                        </form>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-        <div class="footer_copyright">
-            <div class="copyright container">
-                <p class="copyright_text">&copy; 2021 Brand All Rights Reserved.</p>
-                <nav class="footer_links">
-                    <a href="#" class="links"><span class="fa fa-facebook" aria-hidden="true"></span>
-                    </a>
-                    <a href="#" class="links"><span class="fa fa-instagram" aria-hidden="true"></span>
-                    </a>
-                    <a href="#" class="links"><span class="fa fa-pinterest-p" aria-hidden="true"></span>
-                    </a>
-                    <a href="#" class="links"><span class="fa fa-twitter" aria-hidden="true"></span></a>
-                </nav>
+      <div class="background_footer">
+        <section class="feedback">
+          <div class="feedback_box container">
+            <figure class="comment">
+              <img src="image/Intersect.png" alt="photo" />
+              <figcaption class="comment_text">
+                “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+                pulvinar purus condimentum“
+              </figcaption>
+            </figure>
+            <div class="subscribe">
+              <div class="subscribe_text">
+                <h2 class="subscribe_head">subscribe</h2>
+                <p class="subscribe_text_p">FOR OUR NEWLETTER AND PROMOTION</p>
+              </div>
+              <form action="#" class="form_email" id="subscribe_email">
+                <input
+                  class="input_email"
+                  type="email"
+                  placeholder="Enter Your Email"
+                />
+                <button
+                  class="button_email"
+                  type="submit"
+                  form="subscribe_email"
+                >
+                  Subscribe
+                </button>
+              </form>
             </div>
-        </div>
-    </footer>
-</body>
+          </div>
+        </section>
+      </div>
 
+      <div class="footer_copyright">
+        <div class="copyright container">
+          <p class="copyright_text">&copy; 2021 Brand All Rights Reserved.</p>
+          <nav class="footer_links">
+            <a href="#" class="links"
+              ><span class="fa fa-facebook" aria-hidden="true"></span>
+            </a>
+            <a href="#" class="links"
+              ><span class="fa fa-instagram" aria-hidden="true"></span>
+            </a>
+            <a href="#" class="links"
+              ><span class="fa fa-pinterest-p" aria-hidden="true"></span>
+            </a>
+            <a href="#" class="links"
+              ><span class="fa fa-twitter" aria-hidden="true"></span
+            ></a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
